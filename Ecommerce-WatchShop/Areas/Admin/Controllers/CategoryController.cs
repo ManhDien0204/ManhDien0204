@@ -37,7 +37,7 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
         {
 
-            var categories = await _context.Categories.ToListAsync();
+            var categories = await _context.DanhMucs.ToListAsync();
 
             return View(categories);
 
@@ -47,13 +47,13 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Create(Category model)
+        public async Task<IActionResult> Create(DanhMuc model)
 
         {
 
             // Log model để kiểm tra dữ liệu gửi từ client
 
-            Console.WriteLine($"CategoryName: {model.CategoryName}, ParentId: {model.ParentId}, Slug: {model.Slug}");
+            Console.WriteLine($"CategoryName: {model.TenDanhMuc}, ParentId: {model.MaDanhMucCha}, Slug: {model.Slug}");
 
 
 
@@ -61,9 +61,9 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
             {
 
-                model.Slug = await SlugHelper.GenerateUniqueSlug(_context, model.CategoryName!, SlugHelper.EntityType.Category, model.CategoryId);
+                model.Slug = await SlugHelper.GenerateUniqueSlug(_context, model.TenDanhMuc!, SlugHelper.EntityType.Category, model.MaDanhMuc);
 
-                _context.Categories.Add(model);
+                _context.DanhMucs.Add(model);
                 try
 
                 {
@@ -112,7 +112,7 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Edit(Category model)
+        public async Task<IActionResult> Edit(DanhMuc model)
 
         {
 
@@ -120,17 +120,17 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
             {
 
-                var category = await _context.Categories.FindAsync(model.CategoryId);
+                var category = await _context.DanhMucs.FindAsync(model.MaDanhMuc);
 
                 if (category != null)
 
                 {
 
-                    category.CategoryName = model.CategoryName;
+                    category.TenDanhMuc = model.TenDanhMuc;
 
-                    category.Slug = await SlugHelper.GenerateUniqueSlug(_context, category.CategoryName!, SlugHelper.EntityType.Category, model.CategoryId);
+                    category.Slug = await SlugHelper.GenerateUniqueSlug(_context, category.TenDanhMuc!, SlugHelper.EntityType.Category, model.MaDanhMuc);
 
-                    category.ParentId = model.ParentId;
+                    category.MaDanhMucCha = model.MaDanhMucCha;
 
 
 
@@ -160,13 +160,13 @@ namespace DongHo_Admin.Areas.Admin.Controllers
 
         {
 
-            var category = _context.Categories.Find(id);
+            var category = _context.DanhMucs.Find(id);
 
             if (category != null)
 
             {
 
-                _context.Categories.Remove(category);
+                _context.DanhMucs.Remove(category);
 
                 _context.SaveChanges();
 
@@ -182,8 +182,8 @@ namespace DongHo_Admin.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Search(string searchQuery)
         {
-            var categories = _context.Categories
-                                    .Where(c => c.CategoryName!.ToLower().Contains(searchQuery) || c.Slug!.Contains(searchQuery))
+            var categories = _context.DanhMucs
+                                    .Where(c => c.TenDanhMuc!.ToLower().Contains(searchQuery) || c.Slug!.Contains(searchQuery))
                                     .ToList();
 
             return Json(new { success = true, data = categories });

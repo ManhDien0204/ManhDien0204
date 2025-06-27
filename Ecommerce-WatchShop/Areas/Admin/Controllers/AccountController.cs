@@ -31,14 +31,14 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
                 return View(loginVM);
             }
 
-            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.Username == loginVM.Username);
+            var account = await _context.TaiKhoans.FirstOrDefaultAsync(a => a.TenDangNhap == loginVM.Username);
             if (account == null)
             {
                 ModelState.AddModelError("Username", "Tài khoản Admin không tồn tại");
                 return View(loginVM);
             }
 
-            if (account.Password != loginVM.Password)
+            if (account.MatKhau != loginVM.Password)
             {
                 ModelState.AddModelError("Password", "Tài khoản hoặc mật khẩu không đúng");
                 return View(loginVM);
@@ -50,9 +50,9 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
             {
                 claims.Add(new Claim(ClaimTypes.Name, loginVM.Username));
             }
-            if (account.RoleId > 0)
+            if (account.MaVaiTro > 0)
             {
-                var roleValue = account.RoleId.ToString();
+                var roleValue = account.MaVaiTro.ToString();
                 if (!string.IsNullOrEmpty(roleValue))
                 {
                     claims.Add(new Claim(ClaimTypes.Role, roleValue));
@@ -68,7 +68,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
 
             await HttpContext.SignInAsync("Admin", new ClaimsPrincipal(claimsIdentity), authProperties);
 
-            if (account.RoleId == 2)
+            if (account.MaVaiTro == 2)
             {
                 return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
             }

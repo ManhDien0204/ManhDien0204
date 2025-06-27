@@ -1,4 +1,4 @@
-@model IEnumerable<Ecommerce_WatchShop.Models.Category>
+@model IEnumerable<Ecommerce_WatchShop.Models.DanhMuc>
 <div class="container-xl">
     <div class="row g-3 mb-4 align-items-center justify-content-between">
         <div class="col-auto">
@@ -44,17 +44,17 @@
                                         foreach (var category in Model)
                                         {
                                             <tr>
-                                                <td class="cell">@category.CategoryId</td>
-                                                <td class="cell">@category.CategoryName</td>
+                                                <td class="cell">@category.MaDanhMuc</td>
+                                                <td class="cell">@category.TenDanhMuc</td>
                                                 <td class="cell">@category.Slug</td>
                                                 <td class="cell">
-                                                    @(category.ParentId.HasValue ? Model.FirstOrDefault(c => c.CategoryId == category.ParentId)?.CategoryName : "Không có")
+                                                    @(category.MaDanhMucCha.HasValue ? Model.FirstOrDefault(c => c.MaDanhMuc == category.MaDanhMucCha)?.TenDanhMuc : "Không có")
                                                 </td>
                                                 <td class="cell">
-                                                    <a class="btn" href="#" onclick="editCategory(@category.CategoryId, '@category.CategoryName', '@category.ParentId')">
+                                                    <a class="btn" href="#" onclick="editCategory(@category.MaDanhMuc, '@category.TenDanhMuc', '@category.MaDanhMucCha')">
                                                         <i class="bi bi-pencil-square" style="font-size: 1.2rem"></i>
                                                     </a>
-                                                    <a class="btn" href="#" onclick="deleteCategory(@category.CategoryId)">
+                                                    <a class="btn" href="#" onclick="deleteCategory(@category.MaDanhMuc)">
                                                         <i class="bi bi-trash3" style="font-size: 1.2rem"></i>
                                                     </a>
                                                 </td>
@@ -95,7 +95,7 @@
                                     <option value="">-- Không có --</option>
                                     @foreach (var category in Model!)
                                     {
-                                        <option value="@category.CategoryId">@category.CategoryName</option>
+                                        <option value="@category.MaDanhMuc">@category.TenDanhMuc</option>
                                     }
                                 </select>
                             </div>
@@ -134,7 +134,7 @@
                                     <option value="">-- Không có --</option>
                                     @foreach (var category in Model!)
                                     {
-                                        <option value="@category.CategoryId">@category.CategoryName</option>
+                                        <option value="@category.MaDanhMuc">@category.TenDanhMuc</option>
                                     }
                                 </select>
                             </div>

@@ -27,14 +27,14 @@ namespace DongHo_Admin.Areas.Admin.Controllers
         [Route("GetRevenue")]
         public IActionResult GetRevenue()
         {
-            var chartData = _context.Bills
-                .Join(_context.Invoices,
-                    b => b.BillId,
-                    i => i.BillId,
+            var chartData = _context.HoaDons
+                .Join(_context.ChiTietHoaDons,
+                    b => b.MaHoaDon,
+                    i => i.MaHoaDon,
                     (b, i) => new RevenueStatisticVM
                     {
-                        Date = b.OrderDate.Date, 
-                        Revenue = i.Quantity * i.Price 
+                        Date = b.NgayDatHang.Date, 
+                        Revenue = i.SoLuong * i.Gia 
                     })
                 .GroupBy(s => s.Date)
                 .Select(group => new RevenueStatisticVM
@@ -90,15 +90,15 @@ namespace DongHo_Admin.Areas.Admin.Controllers
             try
             {
                 // Truy vấn với so sánh DateTime trực tiếp
-                var chartData = _context.Bills
-                    .Where(b => b.OrderDate.Date == parsedDate.Date) // So sánh trực tiếp
-                    .Join(_context.Invoices,
-                        b => b.BillId,
-                        i => i.BillId,
+                var chartData = _context.HoaDons
+                    .Where(b => b.NgayDatHang.Date == parsedDate.Date) // So sánh trực tiếp
+                    .Join(_context.ChiTietHoaDons,
+                        b => b.MaHoaDon,
+                        i => i.MaHoaDon,
                         (b, i) => new RevenueStatisticVM
                         {
-                            Date = b.OrderDate,
-                            Revenue = i.Quantity * i.Price, // Tính doanh thu
+                            Date = b.NgayDatHang,
+                            Revenue = i.SoLuong * i.Gia, // Tính doanh thu
                         })
                     .GroupBy(s => s.Date)
                     .Select(group => new RevenueStatisticVM

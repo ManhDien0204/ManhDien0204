@@ -16,27 +16,27 @@ namespace Ecommerce_WatchShop.Controllers
         }
         public async Task<IActionResult> Index(string slug = "")
         {
-            var category = _context.Categories.Where(c => c.Slug == slug).FirstOrDefault();
+            var category = _context.DanhMucs.Where(c => c.Slug == slug).FirstOrDefault();
             if (category == null)
             {
                 return RedirectToAction("Index");
             }
 
-            var products = _context.Products
-                .Where(p => p.CategoryId == category.CategoryId)
-                .Include(p => p.ProductImages)
-                .Include(p => p.ProductRatings);
+            var products = _context.SanPhams
+                .Where(p => p.MaDanhMuc == category.MaDanhMuc)
+                .Include(p => p.HinhAnhSanPhams)
+                .Include(p => p.DanhGiaSanPhams);
             var result = await products.Select(p => new ProductVM
             {
-                ProductId = p.ProductId,
-                ProductName = p.ProductName!,
-                Image = p.ProductImages.FirstOrDefault()!.Image ?? "",
-                Price = p.Price,
-                ShortDescription = p.ShortDescription!,
-                ProductRating = p.ProductRatings.Any()
-                    ? p.ProductRatings.Average(r => (double)r.Rating!)
+                ProductId = p.MaSanPham,
+                ProductName = p.TenSanPham!,
+                Image = p.HinhAnhSanPhams.FirstOrDefault()!.HinhAnh ?? "",
+                Price = p.Gia,
+                ShortDescription = p.MoTaNgan!,
+                ProductRating = p.DanhGiaSanPhams.Any()
+                    ? p.DanhGiaSanPhams.Average(r => (double)r.DiemDanhGia!)
                     : 0,
-                TotalRating = p.ProductRatings.Count,
+                TotalRating = p.DanhGiaSanPhams.Count,
             }).ToListAsync();
 
             return View(result);

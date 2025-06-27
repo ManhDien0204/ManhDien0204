@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Ecommerce_WatchShop.Models.Product>
+﻿@model IEnumerable<Ecommerce_WatchShop.Models.SanPham>
 
 @{
     ViewData["Title"] = "Danh sách sản phẩm";
@@ -39,17 +39,17 @@
         @foreach (var product in Model)
         {
             <tr>
-                <td>@product.ProductId</td>
+                <td>@product.MaSanPham</td>
                 <td>
-                    <img src="@product.Image" alt="@product.ProductName" style="width: 50px; height: 50px; object-fit: cover;" />
+                    <img src="@product.HinhAnh" alt="@product.TenSanPham" style="width: 50px; height: 50px; object-fit: cover;" />
                 </td>
-                <td>@product.ProductName</td>
-                <td>@product.Category?.CategoryName</td>
-                <td>@product.Brand?.BrandId</td>
-                <td>@product.Price</td>
-                <td>@product.Quantity</td>
+                <td>@product.TenSanPham</td>
+                <td>@product.DanhMuc?.TenDanhMuc</td>
+                <td>@product.ThuongHieu?.MaThuongHieu</td>
+                <td>@product.Gia</td>
+                <td>@product.SoLuong</td>
                 <td>
-                    @if (product.Status == 1)
+                    @if (product.TrangThai == 1)
                     {
                         <span class="badge bg-success">Hiển thị</span>
                     }
@@ -59,17 +59,17 @@
                     }
                 </td>
                 <td>
-                    <a href="@Url.Action("Edit", "Product", new { id = product.ProductId })" class="btn btn-warning">Chỉnh sửa</a>
+                    <a href="@Url.Action("Edit", "Product", new { id = product.MaSanPham })" class="btn btn-warning">Chỉnh sửa</a>
                 </td>
             </tr>
         }
         @foreach (var product in Model)
         {
             <tr>
-                <td>@product.ProductId</td>
-                <td>@product.ProductName</td>
+                <td>@product.MaSanPham</td>
+                <td>@product.TenSanPham</td>
                 <td>
-                    @if (product.Status == 1)
+                    @if (product.TrangThai == 1)
                     {
                         <span class="badge badge-success">Hiển thị</span>
                     }
@@ -80,32 +80,32 @@
                 </td>
                 <td>
                     <!-- Nút Ẩn -->
-                    @if (product.Status == 1)
+                    @if (product.TrangThai == 1)
                     {
-                        <form asp-action="HideProduct" asp-route-id="@product.ProductId" method="post">
+                        <form asp-action="HideProduct" asp-route-id="@product.MaSanPham" method="post">
                             <button type="submit" class="btn btn-warning">Ẩn sản phẩm</button>
                         </form>
                     }
                     else
                     {
-                        <form asp-action="ShowProduct" asp-route-id="@product.ProductId" method="post">
+                        <form asp-action="ShowProduct" asp-route-id="@product.MaSanPham" method="post">
                             <button type="submit" class="btn btn-success">Hiển thị lại sản phẩm</button>
                         </form>
                     }
                 </td>
             </tr>
         }
-        @foreach (var product in Model.Where(p => p.Status == 1))  
+        @foreach (var product in Model.Where(p => p.TrangThai == 1))  
 {
     <tr>
-        <td>@product.ProductId</td>
-        <td>@product.ProductName</td>
+        <td>@product.MaSanPham</td>
+        <td>@product.TenSanPham</td>
         <td>
             <span class="badge badge-success">Hiển thị</span>
         </td>
         <td>
             <!-- Nút Ẩn -->
-            <form asp-action="HideProduct" asp-route-id="@product.ProductId" method="post">
+            <form asp-action="HideProduct" asp-route-id="@product.MaSanPham" method="post">
                 <button type="submit" class="btn btn-warning">Ẩn sản phẩm</button>
             </form>
         </td>

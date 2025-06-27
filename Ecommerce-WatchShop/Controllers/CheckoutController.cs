@@ -43,20 +43,20 @@ namespace Ecommerce_WatchShop.Controllers
                 var customerIdClaim = HttpContext.User.Claims.SingleOrDefault(c => c.Type == "CustomerId");
                 if (customerIdClaim != null && int.TryParse(customerIdClaim.Value, out var customerId))
                 {
-                    var bill = new Bill
+                    var bill = new HoaDon
                     {
-                        CustomerId = customerId,
-                        FullName = checkoutValidationVM.CheckoutVM.FullName,
-                        Phone = checkoutValidationVM.CheckoutVM.Phone,
+                        MaKhachHang = customerId,
+                        HoTen = checkoutValidationVM.CheckoutVM.FullName,
+                        SoDienThoai = checkoutValidationVM.CheckoutVM.Phone,
                         Email = checkoutValidationVM.CheckoutVM.Email,
-                        Address = checkoutValidationVM.CheckoutVM.Address,
-                        Province = checkoutValidationVM.CheckoutVM.Province,
-                        District = checkoutValidationVM.CheckoutVM.District,
-                        Ward = checkoutValidationVM.CheckoutVM.Ward,
-                        PaymentMethod = checkoutValidationVM.CheckoutVM.PaymentMethod,
-                        Total = checkoutValidationVM.CheckoutVM.TotalAmount,
-                        Status = 1,
-                        OrderDate = DateTime.Now
+                        DiaChi = checkoutValidationVM.CheckoutVM.Address,
+                        Tinh = checkoutValidationVM.CheckoutVM.Province,
+                        Huyen = checkoutValidationVM.CheckoutVM.District,
+                        Xa = checkoutValidationVM.CheckoutVM.Ward,
+                        PhuongThucThanhToan = checkoutValidationVM.CheckoutVM.PaymentMethod,
+                        TongTien = checkoutValidationVM.CheckoutVM.TotalAmount,
+                        TrangThai = 1,
+                        NgayDatHang = DateTime.Now
                     };
         
                     await _context.Database.BeginTransactionAsync();
@@ -66,21 +66,21 @@ namespace Ecommerce_WatchShop.Controllers
                         await _context.AddAsync(bill);
                         await _context.SaveChangesAsync();
         
-                        var invoices = new List<Invoice>();
+                        var invoices = new List<ChiTietHoaDon>();
                         foreach(var item in checkoutValidationVM.CartRequest)
                         {
-                            var productExists = await _context.Products.AnyAsync(p => p.ProductId == item.ProductId);
+                            var productExists = await _context.SanPhams.AnyAsync(p => p.MaSanPham == item.ProductId);
                             if (!productExists)
                             {
                                 continue; 
                             }
-                            invoices.Add(new Invoice
+                            invoices.Add(new ChiTietHoaDon
                             {
-                                BillId   = bill.BillId,
-                                ProductId = item.ProductId,
-                                Quantity = item.Quantity,
-                                Price = (decimal)item.Price,
-                                Total = (decimal)(item.Quantity * item.Price)
+                                MaHoaDon   = bill.MaHoaDon,
+                                MaSanPham = item.ProductId,
+                                SoLuong = item.Quantity,
+                                Gia = (decimal)item.Price,
+                                TongTien = (decimal)(item.Quantity * item.Price)
                             });
                         }
                         if (invoices.Any())

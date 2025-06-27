@@ -23,7 +23,7 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var sliders = await _context.Sliders.Where(s => s.Status).OrderBy(s => s.DisplayOrder).ToListAsync();
+        var sliders = await _context.Sliders.Where(s => s.TrangThai).OrderBy(s => s.ThuTuHienThi).ToListAsync();
         return View(sliders);
     }
 
@@ -31,8 +31,8 @@ public class HomeController : Controller
     {
         var aboutVM = new AboutVM
         {
-            About = await _context.Abouts.FirstOrDefaultAsync(),
-            Policies = await _context.Policies.ToListAsync()
+            GioiThieus = await _context.GioiThieus.FirstOrDefaultAsync(),
+            ChinhSachs = await _context.ChinhSachs.ToListAsync()
         };
         return View(aboutVM);
     }
@@ -46,16 +46,16 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            var contact = new Contact
+            var contact = new LienHe
             {
-                FullName = string.IsNullOrEmpty(contactVM.FullName) ? "" : contactVM.FullName,
+                HoTen = string.IsNullOrEmpty(contactVM.FullName) ? "" : contactVM.FullName,
                 Email = string.IsNullOrEmpty(contactVM.Email) ? "" : contactVM.Email,
-                Subject = string.IsNullOrEmpty(contactVM.Subject) ? "" : contactVM.Subject,
-                Note = string.IsNullOrEmpty(contactVM.Note) ? "" : contactVM.Note
+                TieuDe = string.IsNullOrEmpty(contactVM.Subject) ? "" : contactVM.Subject,
+                GhiChu = string.IsNullOrEmpty(contactVM.Note) ? "" : contactVM.Note
             };
 
 
-            _context.Contacts.Add(contact);
+            _context.LienHes.Add(contact);
             await _context.SaveChangesAsync();
 
 
@@ -75,8 +75,8 @@ public class HomeController : Controller
             return PartialView("_RegisterPartial", registerVM);
         }
 
-        var exist = _context.Accounts
-            .FirstOrDefault(a => a.Username == registerVM.Username);
+        var exist = _context.TaiKhoans
+            .FirstOrDefault(a => a.TenDangNhap == registerVM.Username);
 
         if (exist != null)
         {
@@ -84,23 +84,23 @@ public class HomeController : Controller
             return PartialView("_RegisterPartial", registerVM);
         }
 
-        var account = new Account
+        var account = new TaiKhoan
         {
-            Username = registerVM.Username,
-            Password = registerVM.Password,
-            RoleId = 1,
+            TenDangNhap = registerVM.Username,
+            MatKhau = registerVM.Password,
+            MaVaiTro = 1,
         };
 
-        _context.Accounts.Add(account);
+        _context.TaiKhoans.Add(account);
         await _context.SaveChangesAsync();
 
-        var customer = new Customer
+        var customer = new KhachHang
         {
-            AccountId = account.AccountId,
-            DisplayName = account.Username
+            MaTaiKhoan = account.MaTaiKhoan,
+            TenHienThi = account.TenDangNhap
         };
 
-        _context.Customers.Add(customer);
+        _context.KhachHangs.Add(customer);
         await _context.SaveChangesAsync();
         TempData["success"] = "Đăng ký thành công";
         if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
@@ -127,33 +127,33 @@ public class HomeController : Controller
             return PartialView("_LoginPartial", loginVM);
         }
 
-        var account = await _context.Accounts.FirstOrDefaultAsync(a => a.Username == loginVM.Username);
+        var account = await _context.TaiKhoans.FirstOrDefaultAsync(a => a.TenDangNhap == loginVM.Username);
         if (account == null)
         {
             ModelState.AddModelError("Username", "Tài khoản không tồn tại");
             return PartialView("_LoginPartial", loginVM);
         }
 
-        if (account.Password != loginVM.Password)
+        if (account.MatKhau != loginVM.Password)
         {
             ModelState.AddModelError("Password", "Tài khoản hoặc mật khẩu bị sai");
             return PartialView("_LoginPartial", loginVM);
         }
 
-        if (account.RoleId == 2)
+        if (account.MaVaiTro == 2)
         {
             ModelState.AddModelError("Username", "Không có quyền truy cập");
             return PartialView("_LoginPartial", loginVM);
         }
-        var customer = await _context.Customers.FirstOrDefaultAsync(c => c.AccountId == account.AccountId);
+        var customer = await _context.TaiKhoans.FirstOrDefaultAsync(c => c.MaTaiKhoan == account.MaTaiKhoan);
 
         var claims = new List<Claim>
         {
-            new Claim("AccountId", account.AccountId.ToString()) // Claim cho AccountId
+            new Claim("MaTaiKhoan", account.MaTaiKhoan.ToString()) // Claim cho AccountId
         };
-        if (customer != null && customer.CustomerId > 0)
+        if (customer != null && customer.MaTaiKhoan > 0)
         {
-            claims.Add(new Claim("CustomerId", customer.CustomerId.ToString())); // Claim cho CustomerId
+            claims.Add(new Claim("MaTaiKhoan", customer.MaTaiKhoan.ToString())); // Claim cho CustomerId
 
         }
 

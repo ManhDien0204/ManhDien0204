@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce_WatchShop.Models;
 
-public partial class Role
+public partial class VaiTro
 {
     [Key]
-    public int RoleId { get; set; }
+    public int MaVaiTro { get; set; }
     [Column(TypeName = "varchar(50)")]
-    public string? Type { get; set; }
+    public string? Loai { get; set; }
 
-    public virtual ICollection<Account> Accounts { get; set; } = new List<Account>();
+    public virtual ICollection<TaiKhoan> TaiKhoans { get; set; } = new List<TaiKhoan>();
 }

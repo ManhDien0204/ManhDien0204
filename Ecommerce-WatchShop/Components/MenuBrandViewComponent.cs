@@ -14,10 +14,10 @@ namespace Ecommerce_WatchShop.Components
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var menuBrand = await _context.Brands.Select(b => new MenuBrandVM
+            var menuBrand = await _context.ThuongHieus.Select(b => new MenuBrandVM
             {
-                BrandId = b.BrandId,
-                Name = b.Name,
+                BrandId = b.MaThuongHieu,
+                Name = b.TenThuongHieu,
                 Slug = b.Slug
             }).ToListAsync();
             return View(menuBrand);

@@ -44,7 +44,7 @@
                                 <div class="blog-list blog-grid-single-item blog-color--golden" data-aos="fade-up" data-aos-delay="0">
                                     <div class="image-box">
                                         <a href="blog-single-sidebar-left.html" class="image-link">
-                                            <img class="img-fluid" src="@Url.Content("~/images/blog/" + blog.Image)" alt="@blog.Subject">
+                                            <img class="img-fluid" src="@Url.Content("~/images/blog/" + blog.HinhAnh)" alt="@blog.TieuDe">
                                         </a>
                                     </div>
                                     <div class="content">
@@ -53,10 +53,10 @@
                                             @* <li>Ngày : <a href="#" class="date">@DateTime.Now</a></li> *@
                                         </ul>
                                         <h6 class="title">
-                                            <a href="blog-single-sidebar-left.html">@blog.Subject</a>
+                                            <a href="blog-single-sidebar-left.html">@blog.TieuDe</a>
                                         </h6>
                                         <p>
-                                            @blog.Contents
+                                            @blog.NoiDung
                                         </p>
                                         <a href="#" class="read-more-btn icon-space-left">
                                             Xem thêm <span class="icon">

@@ -3,15 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce_WatchShop.Models;
 
-public partial class Brand
+public partial class DanhMuc
 {
     [Key]
-    public int BrandId { get; set; }
-    
+    public int MaDanhMuc { get; set; }
     [Column(TypeName = "nvarchar(100)")]
-    public string? Name { get; set; }
+    public string? TenDanhMuc { get; set; }
+
+    public int? MaDanhMucCha { get; set; }
     [Column(TypeName = "varchar(100)")]
     public string? Slug { get; set; }
 
-    public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+    public virtual ICollection<SanPham> SanPhams { get; set; } = new List<SanPham>();
 }

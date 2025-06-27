@@ -14,11 +14,11 @@ namespace Ecommerce_WatchShop.Components
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var category = await _context.Categories.Select(c => new MenuCategoryVM
+            var category = await _context.DanhMucs.Select(c => new MenuCategoryVM
             {
-                CategoryId = c.CategoryId,
-                CategoryName = c.CategoryName,
-                ParentId = c.ParentId,
+                CategoryId = c.MaDanhMuc,
+                CategoryName = c.TenDanhMuc,
+                ParentId = c.MaDanhMucCha,
                 Slug = c.Slug,
             }).ToListAsync();
             return View(category);

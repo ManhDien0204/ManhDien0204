@@ -17,16 +17,16 @@ namespace Ecommerce_WatchShop.Components
         public async Task<IViewComponentResult> InvokeAsync()
         {
             DateTime cutoffDate = DateTime.Now.AddDays(-30);
-            var featureProduct = await _context.Products
-                .Where(p => p.CreatedAt >= cutoffDate)
+            var featureProduct = await _context.SanPhams
+                .Where(p => p.NgayTao >= cutoffDate)
                 .Select(p => new ProductVM()
                 {
                     Slug = p.Slug,
-                    ProductName = p.ProductName,
-                    Price = p.Price,
-                    Image = p.Image,
-                    ProductRating = p.ProductRatings.Any()
-                        ? p.ProductRatings.Average(r => (double)r.Rating!)
+                    ProductName = p.TenSanPham,
+                    Price = p.Gia,
+                    Image = p.HinhAnh,
+                    ProductRating = p.DanhGiaSanPhams.Any()
+                        ? p.DanhGiaSanPhams.Average(r => (double)r.DiemDanhGia!)
                         : 0,
                 }).ToListAsync();
             ViewBag.FeaturedProduct = featureProduct;

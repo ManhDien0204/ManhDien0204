@@ -33,7 +33,7 @@
                         1. Về chúng tôi
                     </h5>
                     <p>
-                        @Html.Raw(Model.About.Content)
+                        @Html.Raw(Model.GioiThieus.NoiDung)
                     </p>
                 </div>
             </div>
@@ -43,11 +43,11 @@
                         2. Cửa hàng của chúng tôi
                     </h5>
                     <p>
-                        Địa chỉ: @Model.About.Address
+                        Địa chỉ: @Model.GioiThieus.DiaChi
                         <br />
-                        Điện thoại: @Model.About.Phone
+                        Điện thoại: @Model.GioiThieus.SoDienThoai
                         <br />
-                        Email: @Model.About.Email
+                        Email: @Model.GioiThieus.Email
                     </p>
                 </div>
             </div>
@@ -61,14 +61,14 @@
                         </h5>
                     </div>
                     <div class="faq-accordian">
-                        @foreach (var policy in Model.Policies)
+                        @foreach (var policy in Model.ChinhSachs)
                         {
                             <div class="faq-accordian-single-item" data-aos="fade-up" data-aos-delay="0">
-                                <input id="item-@policy.Id" name="accordian-item" type="radio" checked="">
-                                <label for="item-@policy.Id">@policy.Title</label>
+                                <input id="item-@policy.Ma" name="accordian-item" type="radio" checked="">
+                                <label for="item-@policy.Ma">@policy.TieuDe</label>
                                 <div class="item-content">
                                     <p>
-                                        @policy.Content
+                                        @policy.NoiDung
                                     </p>
                                 </div>
                             </div>

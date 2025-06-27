@@ -110,9 +110,9 @@ namespace Ecommerce_WatchShop.Helper
             // Kiểm tra nếu slug đã tồn tại trong cơ sở dữ liệu
             if (entityType == EntityType.Product)
             {
-                var existingProduct = await context.Products
+                var existingProduct = await context.SanPhams
                     .AsNoTracking() // Chỉ lấy dữ liệu mà không giữ trạng thái theo dõi
-                    .Where(p => p.Slug == slug && (entityId == null || p.ProductId != entityId))
+                    .Where(p => p.Slug == slug && (entityId == null || p.MaSanPham != entityId))
                     .FirstOrDefaultAsync();
 
                 // Nếu có sản phẩm trùng slug, thêm Id vào cuối slug hoặc tạo số đếm duy nhất
@@ -122,7 +122,7 @@ namespace Ecommerce_WatchShop.Helper
                     string originalSlug = slug;
 
                     // Kiểm tra và tạo slug duy nhất
-                    while (await context.Products.AnyAsync(p => p.Slug == slug && (entityId == null || p.ProductId != entityId)))
+                    while (await context.SanPhams.AnyAsync(p => p.Slug == slug && (entityId == null || p.MaSanPham != entityId)))
                     {
                         slug = $"{originalSlug}-{counter}";
                         counter++;
@@ -131,9 +131,9 @@ namespace Ecommerce_WatchShop.Helper
             }
             else if (entityType == EntityType.Category)
             {
-                var existingCategory = await context.Categories
+                var existingCategory = await context.DanhMucs
                     .AsNoTracking() // Chỉ lấy dữ liệu mà không giữ trạng thái theo dõi
-                    .Where(c => c.Slug == slug && (entityId == null || c.CategoryId != entityId))
+                    .Where(c => c.Slug == slug && (entityId == null || c.MaDanhMuc != entityId))
                     .FirstOrDefaultAsync();
 
                 // Nếu có category trùng slug, thêm Id vào cuối slug hoặc tạo số đếm duy nhất
@@ -143,7 +143,7 @@ namespace Ecommerce_WatchShop.Helper
                     string originalSlug = slug;
 
                     // Kiểm tra và tạo slug duy nhất
-                    while (await context.Categories.AnyAsync(c => c.Slug == slug && (entityId == null || c.CategoryId != entityId)))
+                    while (await context.DanhMucs.AnyAsync(c => c.Slug == slug && (entityId == null || c.MaDanhMuc != entityId)))
                     {
                         slug = $"{originalSlug}-{counter}";
                         counter++;

@@ -63,18 +63,18 @@ public class CartController : Controller
         var item = cart.FirstOrDefault(p => p.Slug == slug);
         if (item is null)
         {
-            var products = await _context.Products.FirstOrDefaultAsync(p => p.Slug == slug);
+            var products = await _context.SanPhams.FirstOrDefaultAsync(p => p.Slug == slug);
             if (products == null)
             {
                 return Json(new { success = false, message = $"Không tìm thấy sản phẩm có mã {slug}." });
             }
             item = new CartRequest
             {
-                ProductId = products.ProductId,
+                ProductId = products.MaSanPham,
                 Slug = products.Slug!,
-                ProductName = products.ProductName!,
-                Image = products.Image,
-                Price = products.Price ?? 0,
+                ProductName = products.TenSanPham!,
+                Image = products.HinhAnh,
+                Price = products.Gia ?? 0,
                 Quantity = quantity,
 
             };
@@ -84,8 +84,8 @@ public class CartController : Controller
         {
             item.Quantity += quantity;
         }
-        var productStock = _context.Products.SingleOrDefault(p => p.Slug == slug);
-        if (productStock != null && item.Quantity > productStock.Quantity)
+        var productStock = _context.SanPhams.SingleOrDefault(p => p.Slug == slug);
+        if (productStock != null && item.Quantity > productStock.SoLuong)
         {
             return Json(new { success = false, message = $"Không thể thêm số lượng vượt quá tồn kho" });
         }
@@ -110,8 +110,8 @@ public class CartController : Controller
         var item = cart.SingleOrDefault(p => p.Slug == slug);
         if (item is not null)
         {
-            var productStock = await _context.Products.SingleOrDefaultAsync(p => p.Slug == slug);
-            if (productStock is not null && quantity > productStock.Quantity)
+            var productStock = await _context.SanPhams.SingleOrDefaultAsync(p => p.Slug == slug);
+            if (productStock is not null && quantity > productStock.SoLuong)
             {
                 return Json(new
                 {

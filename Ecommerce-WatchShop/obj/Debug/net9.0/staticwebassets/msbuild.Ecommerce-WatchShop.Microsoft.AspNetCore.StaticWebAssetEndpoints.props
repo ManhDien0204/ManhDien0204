@@ -29836,13 +29836,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Ecommerce-WatchShop.a85erk1l93.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a85erk1l93"},{"Name":"integrity","Value":"sha256-BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk="},{"Name":"label","Value":"_content/Ecommerce-WatchShop/Ecommerce-WatchShop.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 09:31:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 15:54:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Ecommerce-WatchShop/Ecommerce-WatchShop.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Ecommerce-WatchShop.a85erk1l93.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 09:31:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BtOdmjv12keRLuNDdIxDfpqgioypQH3TJNyUZw8mQBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 15:54:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Ecommerce-WatchShop/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

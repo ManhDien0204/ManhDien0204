@@ -3,18 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce_WatchShop.Models;
 
-public partial class Contact
+public partial class LienHe
 {
     [Key]
-    public int ContactId { get; set; }
+    public int MaLienHe { get; set; }
     [Column(TypeName = "nvarchar(100)")]
-    public string FullName { get; set; } = null!;
+    public string HoTen { get; set; } = null!;
     [Column(TypeName = "nvarchar(100)")]
     public string Email { get; set; } = null!;
     [Column(TypeName = "varchar(200)")]
-    public string Subject { get; set; } = null!;
+    public string TieuDe { get; set; } = null!;
     [Column(TypeName = "nvarchar(500)")]
-    public string Note { get; set; } = null!;
+    public string GhiChu { get; set; } = null!;
 
-    public int Status { get; set; } = 0;
+    public int TrangThai { get; set; } = 0;
 }

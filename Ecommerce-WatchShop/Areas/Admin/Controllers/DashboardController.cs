@@ -23,9 +23,9 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
             {
                 Footer = await _context.Footers.FirstOrDefaultAsync(),
             };
-            ViewBag.customerCount =  await _context.Customers.CountAsync();
-            ViewBag.productCount = await _context.Products.Where(p => p.Status == 1).CountAsync();
-            ViewBag.orderCount = await _context.Bills.Where(b => b.Status == 2).CountAsync();
+            ViewBag.customerCount =  await _context.KhachHangs.CountAsync();
+            ViewBag.productCount = await _context.SanPhams.Where(p => p.TrangThai == 1).CountAsync();
+            ViewBag.orderCount = await _context.SanPhams.Where(b => b.TrangThai == 2).CountAsync();
             return View(footerVM);
         }
         [HttpPost]
@@ -61,15 +61,15 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
                     model.Footer!.Logo = uniqueFileName;
                 }
 
-                if (model.Footer!.Id == 0)
+                if (model.Footer!.Ma == 0)
                     _context.Footers.Add(model.Footer);
                 else
                 {
-                    var existingFooter = _context.Footers.Find(model.Footer.Id);
+                    var existingFooter = _context.Footers.Find(model.Footer.Ma);
                     if (existingFooter != null)
                     {
-                        existingFooter.Description = model.Footer.Description;
-                        existingFooter.Address = model.Footer.Address;
+                        existingFooter.MoTa = model.Footer.MoTa;
+                        existingFooter.DiaChi = model.Footer.DiaChi;
                         existingFooter.Email = model.Footer.Email;
                         existingFooter.FacebookUrl = model.Footer.FacebookUrl;
                         if (!string.IsNullOrEmpty(model.Footer.Logo))

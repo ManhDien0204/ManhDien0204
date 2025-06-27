@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Đơn hàng";
 }
-@model IEnumerable<Ecommerce_WatchShop.Models.Bill>
+@model IEnumerable<Ecommerce_WatchShop.Models.HoaDon>
 
 <!-- ...:::: Start Breadcrumb Section:::... -->
 <div class="breadcrumb-section breadcrumb-bg-color--golden">
@@ -97,21 +97,21 @@
                                         @foreach (var bill in Model)
                                         {
                                             <tr>
-                                                <td>@bill.BillId</td>
-                                                <td>@bill.OrderDate.ToString("dd-MM-yyyy")</td>
-                                                <td>@bill.FullName</td>
+                                                <td>@bill.MaHoaDon</td>
+                                                <td>@bill.NgayDatHang.ToString("dd-MM-yyyy")</td>
+                                                <td>@bill.HoTen</td>
                                                 <td>
-                                                    <span class="@(bill.Status == 1 ? "warning" : bill.Status == 2 ? "success" : "danger")">
-                                                        @(bill.Status == 1 ? "Chưa thanh toán" : bill.Status == 2 ? "Đã thanh toán" : "Đã hủy")
+                                                    <span class="@(bill.TrangThai == 1 ? "warning" : bill.TrangThai == 2 ? "success" : "danger")">
+                                                        @(bill.TrangThai == 1 ? "Chưa thanh toán" : bill.TrangThai == 2 ? "Đã thanh toán" : "Đã hủy")
                                                     </span>
                                                 </td>
-                                                <td>@bill.Total.ToString("C")</td>
+                                                <td>@bill.TongTien.ToString("C")</td>
                                                 <td>
                                                         @* <a href="@Url.Action("Detail", "Order", new { id = bill.BillId })" class="view">Xem</a> *@
-                                                    @if (bill.Status != 3 && bill.Status != 2)
+                                                    @if (bill.TrangThai != 3 && bill.TrangThai != 2)
                                                     {
                                                             <form method="post" action="@Url.Action("Order", "Account")" style="display:inline;">
-                                                                <input type="hidden" name="id" value="@bill.BillId" />
+                                                                <input type="hidden" name="id" value="@bill.MaHoaDon" />
                                                                 <button type="submit" class="btn btn-black-default-hover btn-sm" onclick="return confirm('Bạn có chắc muốn hủy đơn hàng này?');">Hủy</button>
                                                             </form>
                                                         }

@@ -2464,6 +2464,7 @@ D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\comp
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\obph1zugu7-muycvpuwrr.gz
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\mtnph8rd40-87fc7y1x7t.gz
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\y25chn8qvv-jfsiqqwiad.gz
+D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\iazai0a4wn-897zb3bwr5.gz
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\1xxrq7natb-a85erk1l93.gz
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\fqsd2yd1tj-a85erk1l93.gz
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets.build.json
@@ -2475,11 +2476,10 @@ D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\stat
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Ecommerce-WatchShop.props
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Ecommerce-WatchShop.props
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets.pack.json
-D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\Ecommerc.FF5893F5.Up2Date
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\Ecommerce-WatchShop.dll
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\refint\Ecommerce-WatchShop.dll
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\Ecommerce-WatchShop.pdb
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\Ecommerce-WatchShop.genruntimeconfig.cache
 D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\ref\Ecommerce-WatchShop.dll
-D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\compressed\iazai0a4wn-897zb3bwr5.gz
+D:\DoAnWEB\TaiLieu\Ecommerce-WatchShop\Ecommerce-WatchShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

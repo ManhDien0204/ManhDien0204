@@ -24,7 +24,7 @@ public class AccountController : Controller
         if (customerIdClaim == null) return RedirectToAction("Index", "Home");
 
         int customerId = int.Parse(customerIdClaim.Value);
-        var customer = await _context.Customers.FirstOrDefaultAsync(c => c.AccountId == customerId);
+        var customer = await _context.KhachHangs.FirstOrDefaultAsync(c => c.MaTaiKhoan == customerId);
 
         if (customer == null) return NotFound();
         return View(customer);
@@ -36,20 +36,20 @@ public class AccountController : Controller
 
         int customerId = int.Parse(customerIdClaim.Value);
 
-        var customer = await _context.Customers.FirstOrDefaultAsync(c => c.AccountId == customerId);
+        var customer = await _context.KhachHangs.FirstOrDefaultAsync(c => c.MaTaiKhoan == customerId);
 
         if (customer == null) return NotFound();
 
         // Tạo CustomerVM và truyền dữ liệu vào từ khách hàng
         var customerVM = new CustomerVM
         {
-            FullName = customer.FullName,
-            Phone = customer.Phone,
-            Address = customer.Address,
+            FullName = customer.HoTen,
+            Phone = customer.SoDienThoai,
+            Address = customer.DiaChi,
             Email = customer.Email,
-            DisplayName = customer.DisplayName,
-            Dob = customer.Dob,
-            Gender = customer.Gender
+            DisplayName = customer.TenHienThi,
+            Dob = customer.NgaySinh,
+            Gender = customer.GioiTinh
         };
 
         return View(customerVM);
@@ -63,7 +63,7 @@ public class AccountController : Controller
 
         int customerId = int.Parse(customerIdClaim.Value);
 
-        var customer = await _context.Customers.FirstOrDefaultAsync(c => c.AccountId == customerId);
+        var customer = await _context.KhachHangs.FirstOrDefaultAsync(c => c.MaTaiKhoan == customerId);
 
         if (customer == null) return NotFound();
 
@@ -73,13 +73,13 @@ public class AccountController : Controller
             return View(customerVM);
         }
 
-        customer.FullName = customerVM.FullName;
-        customer.Phone = customerVM.Phone;
-        customer.Address = customerVM.Address;
+        customer.HoTen = customerVM.FullName;
+        customer.SoDienThoai = customerVM.Phone;
+        customer.DiaChi = customerVM.Address;
         customer.Email = customerVM.Email;
-        customer.DisplayName = customerVM.DisplayName;
-        customer.Dob = customerVM.Dob;
-        customer.Gender = customerVM.Gender;
+        customer.TenHienThi = customerVM.DisplayName;
+        customer.NgaySinh = customerVM.Dob;
+        customer.GioiTinh = customerVM.Gender;
 
         _context.Update(customer);
         await _context.SaveChangesAsync();
@@ -99,11 +99,11 @@ public class AccountController : Controller
         int customerId = int.Parse(customerIdClaim.Value);
         Console.WriteLine($"Customer ID: {customerId}");
 
-        var query = _context.Bills.Where(b => b.CustomerId == customerId);
+        var query = _context.HoaDons.Where(b => b.MaKhachHang == customerId);
 
         if (status.HasValue)
         {
-            query = query.Where(b => b.Status == status.Value);
+            query = query.Where(b => b.TrangThai == status.Value);
         }
 
         var bills = await query.ToListAsync();
@@ -114,23 +114,23 @@ public class AccountController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Order(int id)
     {
-        var bill = await _context.Bills.FirstOrDefaultAsync(b => b.BillId == id);
+        var bill = await _context.HoaDons.FirstOrDefaultAsync(b => b.MaHoaDon == id);
 
         if (bill == null)
         {
             return NotFound();
         }
 
-        if (bill.Status == 2)
+        if (bill.TrangThai == 2)
         {
             TempData["error"] = "Đơn hàng đã thanh toán, không thể hủy.";
             return RedirectToAction("Order");
         }
 
-        bill.Status = 3;
+        bill.TrangThai = 3;
 
         // Cập nhật trạng thái đơn hàng
-        _context.Bills.Update(bill);
+        _context.HoaDons.Update(bill);
         await _context.SaveChangesAsync();
 
 
@@ -145,15 +145,15 @@ public class AccountController : Controller
         //int? customerId = HttpContext.Session.GetInt32("CustomerId");
         var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "CustomerId");
         int customerId = int.Parse(customerIdClaim!.Value);
-        var favoriteProducts = _context.Favorites
-            .Include(f => f.Product)
-            .Where(f => f.CustomerId == customerId)
+        var favoriteProducts = _context.YeuThichs
+            .Include(f => f.SanPham)
+            .Where(f => f.MaKhachHang == customerId)
             .Select(f => new FavoriteVM
             {
-                ProductId = f.Product.ProductId,
-                Name = f.Product.ProductName!,
-                Price = f.Product.Price,
-                Image = f.Product.Image
+                ProductId = f.SanPham.MaSanPham,
+                Name = f.SanPham.TenSanPham!,
+                Price = f.SanPham.Gia,
+                Image = f.SanPham.HinhAnh
             }).ToList();
 
         return View(favoriteProducts);
@@ -167,20 +167,20 @@ public class AccountController : Controller
             return Json(new { success = false, message = "Bạn cần đăng nhập để thêm vào danh sách yêu thích." });
         }
         int customerId = int.Parse(customerIdClaim.Value);
-        var existingWishlist = _context.Favorites
-            .FirstOrDefault(w => w.CustomerId == customerId && w.ProductId == productId);
+        var existingWishlist = _context.YeuThichs
+            .FirstOrDefault(w => w.MaKhachHang == customerId && w.MaSanPham == productId);
 
         if (existingWishlist != null)
         {
             return Json(new { success = false, message = "Sản phẩm đã có trong danh sách yêu thích!" });
         }
         // Thêm sản phẩm mới vào danh sách yêu thích
-        var wishlist = new Favorite
+        var wishlist = new YeuThich
         {
-            CustomerId = customerId,
-            ProductId = productId
+            MaKhachHang = customerId,
+            MaSanPham = productId
         };
-        _context.Favorites.Add(wishlist);
+        _context.YeuThichs.Add(wishlist);
         _context.SaveChanges();
 
         return Json(new { success = true, message = "Đã thêm vào danh sách yêu thích!" });

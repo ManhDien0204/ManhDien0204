@@ -88,7 +88,7 @@
                             <form asp-action="Update" method="post" enctype="multipart/form-data">
                                 @Html.AntiForgeryToken()
                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                <input type="hidden" asp-for="Footer.Id" />
+                                <input type="hidden" asp-for="Footer.Ma" />
                                 <div class="mb-3">
                                     <label class="form-label">Logo hiện tại</label>
                                     <img src="@Url.Content("~/Images/" + Model.Footer.Logo)" alt="Current Logo"
@@ -103,14 +103,14 @@
 
                                 <div class="mb-3">
                                     <label class="form-label">Mô tả</label>
-                                    <textarea id="editor" asp-for="Footer.Description" class="form-control"></textarea>
-                                    <span asp-validation-for="Footer.Description" class="text-danger"></span>
+                                    <textarea id="editor" asp-for="Footer.MoTa" class="form-control"></textarea>
+                                    <span asp-validation-for="Footer.MoTa" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Địa chỉ</label>
-                                    <input asp-for="Footer.Address" class="form-control" />
-                                    <span asp-validation-for="Footer.Address" class="text-danger"></span>
+                                    <input asp-for="Footer.DiaChi" class="form-control" />
+                                    <span asp-validation-for="Footer.DiaChi" class="text-danger"></span>
 
                                 </div>
 

@@ -22,299 +22,185 @@ namespace Ecommerce_WatchShop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.About", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.BaiViet", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MaBaiViet")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaBaiViet"));
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Abouts");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Account", b =>
-                {
-                    b.Property<int>("AccountId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AccountId"));
-
-                    b.Property<string>("Password")
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<int?>("RoleId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Username")
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("AccountId");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("Accounts");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Bill", b =>
-                {
-                    b.Property<int>("BillId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BillId"));
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("District")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Email")
+                    b.Property<string>("HinhAnh")
                         .HasColumnType("varchar(255)");
 
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("PaymentMethod")
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("varchar(15)");
-
-                    b.Property<string>("Province")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(18,0)");
-
-                    b.Property<string>("Ward")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("BillId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Bills");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Blog", b =>
-                {
-                    b.Property<int>("BlogId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BlogId"));
-
-                    b.Property<string>("Contents")
+                    b.Property<string>("NoiDung")
                         .HasColumnType("nvarchar(MAX)");
 
-                    b.Property<string>("Image")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Subject")
+                    b.Property<string>("TieuDe")
                         .HasColumnType("nvarchar(255)");
 
-                    b.HasKey("BlogId");
+                    b.HasKey("MaBaiViet");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("BaiViets");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.BlogImage", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.BinhLuanSanPham", b =>
                 {
-                    b.Property<int>("BlogImageId")
+                    b.Property<int>("MaBinhLuan")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BlogImageId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaBinhLuan"));
 
-                    b.Property<int?>("BlogId")
+                    b.Property<int?>("KhachHangMaKhachHang")
                         .HasColumnType("int");
 
-                    b.Property<string>("Contents")
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<int?>("MaKhachHang")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Image")
+                    b.Property<int>("MaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("NgayTao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NoiDung")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("BlogImageId");
+                    b.Property<int>("SanPhamMaSanPham")
+                        .HasColumnType("int");
 
-                    b.HasIndex("BlogId");
+                    b.HasKey("MaBinhLuan");
 
-                    b.ToTable("BlogImages");
+                    b.HasIndex("KhachHangMaKhachHang");
+
+                    b.HasIndex("SanPhamMaSanPham");
+
+                    b.ToTable("BinhLuanSanPhams");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Brand", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ChiTietHoaDon", b =>
                 {
-                    b.Property<int>("BrandId")
+                    b.Property<int>("MaChiTietHoaDon")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BrandId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaChiTietHoaDon"));
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(100)");
+                    b.Property<decimal>("Gia")
+                        .HasPrecision(18)
+                        .HasColumnType("decimal(18,0)");
+
+                    b.Property<int>("HoaDonMaHoaDon")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaHoaDon")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SanPhamMaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SoLuong")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TongTien")
+                        .HasPrecision(18)
+                        .HasColumnType("decimal(18,0)");
+
+                    b.HasKey("MaChiTietHoaDon");
+
+                    b.HasIndex("HoaDonMaHoaDon");
+
+                    b.HasIndex("SanPhamMaSanPham");
+
+                    b.ToTable("ChiTietHoaDons");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ChinhSach", b =>
+                {
+                    b.Property<int>("Ma")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
+
+                    b.Property<string>("NoiDung")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TieuDe")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Ma");
+
+                    b.ToTable("ChinhSachs");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.DanhGiaSanPham", b =>
+                {
+                    b.Property<int>("MaDanhGia")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhGia"));
+
+                    b.Property<int?>("DiemDanhGia")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("KhachHangMaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SanPhamMaSanPham")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaDanhGia");
+
+                    b.HasIndex("KhachHangMaKhachHang");
+
+                    b.HasIndex("SanPhamMaSanPham");
+
+                    b.ToTable("DanhGiaSanPhams");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.DanhMuc", b =>
+                {
+                    b.Property<int>("MaDanhMuc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaDanhMuc"));
+
+                    b.Property<int?>("MaDanhMucCha")
+                        .HasColumnType("int");
 
                     b.Property<string>("Slug")
                         .HasColumnType("varchar(100)");
 
-                    b.HasKey("BrandId");
-
-                    b.ToTable("Brands");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Category", b =>
-                {
-                    b.Property<int>("CategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
-
-                    b.Property<string>("CategoryName")
+                    b.Property<string>("TenDanhMuc")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
+                    b.HasKey("MaDanhMuc");
 
-                    b.Property<string>("Slug")
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("CategoryId");
-
-                    b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Contact", b =>
-                {
-                    b.Property<int>("ContactId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactId"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Note")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Subject")
-                        .IsRequired()
-                        .HasColumnType("varchar(200)");
-
-                    b.HasKey("ContactId");
-
-                    b.ToTable("Contacts");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<int?>("AccountId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("DisplayName")
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<DateOnly?>("Dob")
-                        .HasColumnType("date");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<bool?>("Gender")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("varchar(15)");
-
-                    b.HasKey("CustomerId");
-
-                    b.HasIndex("AccountId");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Favorite", b =>
-                {
-                    b.Property<int>("FavoriteId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FavoriteId"));
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("FavoriteId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Favorites");
+                    b.ToTable("DanhMucs");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.Footer", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Ma")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Description")
+                    b.Property<string>("DiaChi")
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Email")
@@ -326,446 +212,593 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Property<string>("Logo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Phone")
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("SoDienThoai")
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<bool>("Status")
+                    b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                    b.HasKey("Ma");
 
                     b.ToTable("Footers");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.FooterLink", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Ma")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
 
-                    b.Property<int>("DisplayOrder")
+                    b.Property<int>("MaNhom")
                         .HasColumnType("int");
 
-                    b.Property<int>("GroupId")
+                    b.Property<int>("ThuTuHienThi")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
+                    b.Property<string>("TieuDe")
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Url")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Ma");
 
                     b.ToTable("FooterLinks");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Invoice", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.GioiThieu", b =>
                 {
-                    b.Property<int>("InvoiceId")
+                    b.Property<int>("Ma")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InvoiceId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
 
-                    b.Property<int>("BillId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18)
-                        .HasColumnType("decimal(18,0)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Total")
-                        .HasPrecision(18)
-                        .HasColumnType("decimal(18,0)");
-
-                    b.HasKey("InvoiceId");
-
-                    b.HasIndex("BillId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Invoices");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Policy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
+                    b.Property<string>("DiaChi")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.Property<string>("NoiDung")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("Policies");
+                    b.Property<string>("SoDienThoai")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Ma");
+
+                    b.ToTable("GioiThieus");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Product", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HinhAnhBaiViet", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("MaHinhAnhBaiViet")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHinhAnhBaiViet"));
 
-                    b.Property<int?>("BrandId")
+                    b.Property<int?>("BaiVietMaBaiViet")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<string>("HinhAnh")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("MaBaiViet")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<string>("NoiDung")
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("MaHinhAnhBaiViet");
+
+                    b.HasIndex("BaiVietMaBaiViet");
+
+                    b.ToTable("HinhAnhBaiViets");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HinhAnhSanPham", b =>
+                {
+                    b.Property<int>("MaHinhAnhSanPham")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHinhAnhSanPham"));
+
+                    b.Property<string>("HinhAnh")
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int?>("MaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SanPhamMaSanPham")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaHinhAnhSanPham");
+
+                    b.HasIndex("SanPhamMaSanPham");
+
+                    b.ToTable("HinhAnhSanPhams");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HoaDon", b =>
+                {
+                    b.Property<int>("MaHoaDon")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHoaDon"));
+
+                    b.Property<string>("DiaChi")
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("HoTen")
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Huyen")
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int?>("KhachHangMaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NgayDatHang")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("Deleted")
+                    b.Property<string>("PhuongThucThanhToan")
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("SoDienThoai")
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("Tinh")
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<decimal>("TongTien")
+                        .HasColumnType("decimal(18,0)");
+
+                    b.Property<int>("TrangThai")
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<string>("Xa")
+                        .HasColumnType("nvarchar(200)");
 
-                    b.Property<int?>("Gender")
+                    b.HasKey("MaHoaDon");
+
+                    b.HasIndex("KhachHangMaKhachHang");
+
+                    b.ToTable("HoaDons");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
+                {
+                    b.Property<int>("MaKhachHang")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Image")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaKhachHang"));
+
+                    b.Property<string>("DiaChi")
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<bool?>("GioiTinh")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("HoTen")
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int?>("MaTaiKhoan")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly?>("NgaySinh")
+                        .HasColumnType("date");
+
+                    b.Property<string>("SoDienThoai")
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<int?>("TaiKhoanMaTaiKhoan")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenHienThi")
+                        .HasColumnType("varchar(200)");
+
+                    b.HasKey("MaKhachHang");
+
+                    b.HasIndex("TaiKhoanMaTaiKhoan");
+
+                    b.ToTable("KhachHangs");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.LienHe", b =>
+                {
+                    b.Property<int>("MaLienHe")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaLienHe"));
+
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<double?>("Price")
-                        .HasColumnType("float");
+                    b.Property<string>("GhiChu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("ProductName")
+                    b.Property<string>("HoTen")
+                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("Quantity")
+                    b.Property<string>("TieuDe")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("TrangThai")
                         .HasColumnType("int");
 
-                    b.Property<string>("ShortDescription")
+                    b.HasKey("MaLienHe");
+
+                    b.ToTable("LienHes");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.SanPham", b =>
+                {
+                    b.Property<int>("MaSanPham")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaSanPham"));
+
+                    b.Property<int?>("DaXoa")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DanhMucMaDanhMuc")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("Gia")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("GioiTinh")
+                        .HasColumnType("int");
+
+                    b.Property<string>("HinhAnh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("LuotXem")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaDanhMuc")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaThuongHieu")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("MoTaNgan")
                         .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime?>("NgayCapNhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("NgayTao")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Slug")
                         .HasColumnType("varchar(100)");
 
-                    b.Property<string>("Specification")
+                    b.Property<int?>("SoLuong")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenSanPham")
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ThongSoKyThuat")
                         .HasColumnType("nvarchar(MAX)");
 
-                    b.Property<int?>("Status")
+                    b.Property<int?>("ThuongHieuMaThuongHieu")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Views")
+                    b.Property<int?>("TrangThai")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("MaSanPham");
 
-                    b.HasIndex("BrandId");
+                    b.HasIndex("DanhMucMaDanhMuc");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("ThuongHieuMaThuongHieu");
 
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductComment", b =>
-                {
-                    b.Property<int>("CommentId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"));
-
-                    b.Property<string>("Contents")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CommentId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductComments");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductImage", b =>
-                {
-                    b.Property<int>("ProductImageId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductImageId"));
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductImageId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductImages");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductRating", b =>
-                {
-                    b.Property<int>("RatingId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RatingId"));
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Rating")
-                        .HasColumnType("int");
-
-                    b.HasKey("RatingId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductRatings");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Role", b =>
-                {
-                    b.Property<int>("RoleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
-
-                    b.Property<string>("Type")
-                        .HasColumnType("varchar(50)");
-
-                    b.HasKey("RoleId");
-
-                    b.ToTable("Roles");
+                    b.ToTable("SanPhams");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.Slider", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Ma")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("DisplayOrder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Image")
+                    b.Property<string>("HinhAnh")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
+                    b.Property<string>("MoTa")
                         .HasColumnType("nvarchar(255)");
 
-                    b.HasKey("Id");
+                    b.Property<int>("ThuTuHienThi")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TieuDe")
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Ma");
 
                     b.ToTable("Sliders");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Account", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.TaiKhoan", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Role", "Role")
-                        .WithMany("Accounts")
-                        .HasForeignKey("RoleId");
+                    b.Property<int>("MaTaiKhoan")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Navigation("Role");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTaiKhoan"));
+
+                    b.Property<int?>("MaVaiTro")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MatKhau")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("TenDangNhap")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("VaiTroMaVaiTro")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaTaiKhoan");
+
+                    b.HasIndex("VaiTroMaVaiTro");
+
+                    b.ToTable("TaiKhoans");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Bill", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ThuongHieu", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Customer", "Customer")
+                    b.Property<int>("MaThuongHieu")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaThuongHieu"));
+
+                    b.Property<string>("Slug")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("TenThuongHieu")
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaThuongHieu");
+
+                    b.ToTable("ThuongHieus");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.VaiTro", b =>
+                {
+                    b.Property<int>("MaVaiTro")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaVaiTro"));
+
+                    b.Property<string>("Loai")
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("MaVaiTro");
+
+                    b.ToTable("VaiTros");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.YeuThich", b =>
+                {
+                    b.Property<int>("MaYeuThich")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaYeuThich"));
+
+                    b.Property<int?>("KhachHangMaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaKhachHang")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaSanPham")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SanPhamMaSanPham")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaYeuThich");
+
+                    b.HasIndex("KhachHangMaKhachHang");
+
+                    b.HasIndex("SanPhamMaSanPham");
+
+                    b.ToTable("YeuThichs");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.BinhLuanSanPham", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.KhachHang", "KhachHang")
+                        .WithMany("ProductComments")
+                        .HasForeignKey("KhachHangMaKhachHang");
+
+                    b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
+                        .WithMany("BinhLuanSanPhams")
+                        .HasForeignKey("SanPhamMaSanPham")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("KhachHang");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ChiTietHoaDon", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.HoaDon", "HoaDon")
+                        .WithMany("ChiTietHoaDons")
+                        .HasForeignKey("HoaDonMaHoaDon")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
+                        .WithMany("ChiTietHoaDons")
+                        .HasForeignKey("SanPhamMaSanPham")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HoaDon");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.DanhGiaSanPham", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.KhachHang", "KhachHang")
+                        .WithMany("ProductRatings")
+                        .HasForeignKey("KhachHangMaKhachHang");
+
+                    b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
+                        .WithMany("DanhGiaSanPhams")
+                        .HasForeignKey("SanPhamMaSanPham")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("KhachHang");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HinhAnhBaiViet", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.BaiViet", "BaiViet")
+                        .WithMany("HinhAnhBaiViets")
+                        .HasForeignKey("BaiVietMaBaiViet");
+
+                    b.Navigation("BaiViet");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HinhAnhSanPham", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
+                        .WithMany("HinhAnhSanPhams")
+                        .HasForeignKey("SanPhamMaSanPham");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HoaDon", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.KhachHang", "KhachHang")
                         .WithMany("Bills")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("KhachHangMaKhachHang");
 
-                    b.Navigation("Customer");
+                    b.Navigation("KhachHang");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.BlogImage", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Blog", "Blog")
-                        .WithMany("BlogImages")
-                        .HasForeignKey("BlogId");
+                    b.HasOne("Ecommerce_WatchShop.Models.TaiKhoan", "TaiKhoan")
+                        .WithMany("KhachHangs")
+                        .HasForeignKey("TaiKhoanMaTaiKhoan");
 
-                    b.Navigation("Blog");
+                    b.Navigation("TaiKhoan");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Customer", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.SanPham", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Account", "Account")
-                        .WithMany("Customers")
-                        .HasForeignKey("AccountId");
+                    b.HasOne("Ecommerce_WatchShop.Models.DanhMuc", "DanhMuc")
+                        .WithMany("SanPhams")
+                        .HasForeignKey("DanhMucMaDanhMuc");
 
-                    b.Navigation("Account");
+                    b.HasOne("Ecommerce_WatchShop.Models.ThuongHieu", "ThuongHieu")
+                        .WithMany("SanPhams")
+                        .HasForeignKey("ThuongHieuMaThuongHieu");
+
+                    b.Navigation("DanhMuc");
+
+                    b.Navigation("ThuongHieu");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Favorite", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.TaiKhoan", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Customer", "Customer")
+                    b.HasOne("Ecommerce_WatchShop.Models.VaiTro", "VaiTro")
+                        .WithMany("TaiKhoans")
+                        .HasForeignKey("VaiTroMaVaiTro");
+
+                    b.Navigation("VaiTro");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.YeuThich", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.KhachHang", "KhachHang")
                         .WithMany("Favorites")
-                        .HasForeignKey("CustomerId");
+                        .HasForeignKey("KhachHangMaKhachHang");
 
-                    b.HasOne("Ecommerce_WatchShop.Models.Product", "Product")
-                        .WithMany("Favorites")
-                        .HasForeignKey("ProductId")
+                    b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
+                        .WithMany("YeuThichs")
+                        .HasForeignKey("SanPhamMaSanPham")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("KhachHang");
 
-                    b.Navigation("Product");
+                    b.Navigation("SanPham");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Invoice", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.BaiViet", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Bill", "Bill")
-                        .WithMany("Invoices")
-                        .HasForeignKey("BillId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Ecommerce_WatchShop.Models.Product", "Product")
-                        .WithMany("Invoices")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Bill");
-
-                    b.Navigation("Product");
+                    b.Navigation("HinhAnhBaiViets");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Product", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.DanhMuc", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Brand", "Brand")
-                        .WithMany("Products")
-                        .HasForeignKey("BrandId");
-
-                    b.HasOne("Ecommerce_WatchShop.Models.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId");
-
-                    b.Navigation("Brand");
-
-                    b.Navigation("Category");
+                    b.Navigation("SanPhams");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductComment", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.HoaDon", b =>
                 {
-                    b.HasOne("Ecommerce_WatchShop.Models.Customer", "Customer")
-                        .WithMany("ProductComments")
-                        .HasForeignKey("CustomerId");
-
-                    b.HasOne("Ecommerce_WatchShop.Models.Product", "Product")
-                        .WithMany("ProductComments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-
-                    b.Navigation("Product");
+                    b.Navigation("ChiTietHoaDons");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductImage", b =>
-                {
-                    b.HasOne("Ecommerce_WatchShop.Models.Product", "Product")
-                        .WithMany("ProductImages")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.ProductRating", b =>
-                {
-                    b.HasOne("Ecommerce_WatchShop.Models.Customer", "Customer")
-                        .WithMany("ProductRatings")
-                        .HasForeignKey("CustomerId");
-
-                    b.HasOne("Ecommerce_WatchShop.Models.Product", "Product")
-                        .WithMany("ProductRatings")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Account", b =>
-                {
-                    b.Navigation("Customers");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Bill", b =>
-                {
-                    b.Navigation("Invoices");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Blog", b =>
-                {
-                    b.Navigation("BlogImages");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Brand", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Category", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Customer", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
                 {
                     b.Navigation("Bills");
 
@@ -776,22 +809,32 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Navigation("ProductRatings");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Product", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.SanPham", b =>
                 {
-                    b.Navigation("Favorites");
+                    b.Navigation("BinhLuanSanPhams");
 
-                    b.Navigation("Invoices");
+                    b.Navigation("ChiTietHoaDons");
 
-                    b.Navigation("ProductComments");
+                    b.Navigation("DanhGiaSanPhams");
 
-                    b.Navigation("ProductImages");
+                    b.Navigation("HinhAnhSanPhams");
 
-                    b.Navigation("ProductRatings");
+                    b.Navigation("YeuThichs");
                 });
 
-            modelBuilder.Entity("Ecommerce_WatchShop.Models.Role", b =>
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.TaiKhoan", b =>
                 {
-                    b.Navigation("Accounts");
+                    b.Navigation("KhachHangs");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ThuongHieu", b =>
+                {
+                    b.Navigation("SanPhams");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.VaiTro", b =>
+                {
+                    b.Navigation("TaiKhoans");
                 });
 #pragma warning restore 612, 618
         }

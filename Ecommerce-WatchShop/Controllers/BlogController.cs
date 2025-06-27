@@ -17,13 +17,13 @@ namespace Ecommerce_WatchShop.Controllers
         public async Task<IActionResult> Index(string searchString, int? pageNumber)
         {
             int pageSize = 5; // Số lượng bài viết trên mỗi trang
-            var blogs = _context.Blogs.AsNoTracking();
+            var blogs = _context.BaiViets.AsNoTracking();
             if (!string.IsNullOrEmpty(searchString))
             {
-                blogs = blogs.Where(b => b.Subject!.Contains(searchString) || b.Contents!.Contains(searchString));
+                blogs = blogs.Where(b => b.TieuDe!.Contains(searchString) || b.NoiDung!.Contains(searchString));
                 ViewData["CurrentFilter"] = searchString;
             }
-            return View(await PaginatedList<Blog>.CreateAsync(blogs, pageNumber ?? 1, pageSize));
+            return View(await PaginatedList<BaiViet>.CreateAsync(blogs, pageNumber ?? 1, pageSize));
         }
     }
     public class PaginatedList<T> : List<T>

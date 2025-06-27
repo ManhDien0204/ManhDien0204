@@ -21,7 +21,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
         // Hiển thị danh sách sản phẩm
         public async Task<IActionResult> Index()
         {
-            var products = await _context.Products.Include(p => p.Brand).Include(p => p.Category).ToListAsync();
+            var products = await _context.SanPhams.Include(p => p.ThuongHieu).Include(p => p.DanhMuc).ToListAsync();
             return View(products);
         }
 
@@ -29,7 +29,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.SanPhams.FindAsync(id);
             if (product == null)
             {
                 TempData["error"] = "Không tìm thấy sản phẩm";
@@ -42,9 +42,9 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
 
         // Xử lý cập nhật sản phẩm
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Product product, IFormFile? imageFile)
+        public async Task<IActionResult> Edit(int id, SanPham product, IFormFile? imageFile)
         {
-            if (id != product.ProductId)
+            if (id != product.MaSanPham)
             {
                 TempData["error"] = "ID sản phẩm không hợp lệ";
                 return RedirectToAction("Index");
@@ -65,11 +65,11 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
                             await imageFile.CopyToAsync(stream);
                         }
 
-                        product.Image = "/images/" + fileName; // Lưu đường dẫn ảnh vào cơ sở dữ liệu
+                        product.HinhAnh = "/images/" + fileName; // Lưu đường dẫn ảnh vào cơ sở dữ liệu
                     }
 
                     // Cập nhật thông tin sản phẩm
-                    product.UpdatedAt = DateTime.Now;
+                    product.NgayCapNhat = DateTime.Now;
 
                     // Kiểm tra trạng thái của sản phẩm trước khi lưu
                     _context.Update(product); // Cập nhật sản phẩm
@@ -105,7 +105,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
         public async Task<IActionResult> HideProduct(int id)
         {
             // Tìm sản phẩm theo ID
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.SanPhams.FindAsync(id);
 
             if (product == null)
             {
@@ -114,10 +114,10 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
             }
 
             // Đánh dấu sản phẩm là đã ẩn (bằng cách đặt Deleted = 1 hoặc Status = 0)
-            product.Status = 0; // Hoặc sử dụng product.Deleted = 1;
+            product.TrangThai = 0; // Hoặc sử dụng product.Deleted = 1;
 
             // Cập nhật thông tin sản phẩm
-            product.UpdatedAt = DateTime.Now;
+            product.NgayCapNhat = DateTime.Now;
             _context.Update(product);
 
             await _context.SaveChangesAsync();
@@ -129,7 +129,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
         public async Task<IActionResult> ShowProduct(int id)
         {
             // Tìm sản phẩm theo ID
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.SanPhams.FindAsync(id);
 
             if (product == null)
             {
@@ -138,10 +138,10 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
             }
 
             // Đánh dấu sản phẩm là hiển thị lại (thay đổi Status hoặc Deleted)
-            product.Status = 1; // Hoặc product.Deleted = 0;
+            product.TrangThai = 1; // Hoặc product.Deleted = 0;
 
             // Cập nhật thông tin sản phẩm
-            product.UpdatedAt = DateTime.Now;
+            product.NgayCapNhat = DateTime.Now;
             _context.Update(product);
 
             await _context.SaveChangesAsync();
@@ -153,7 +153,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             // Tìm sản phẩm theo ID
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.SanPhams.FindAsync(id);
 
             if (product == null)
             {
@@ -164,7 +164,7 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
             try
             {
                 // Xóa sản phẩm khỏi cơ sở dữ liệu
-                _context.Products.Remove(product);
+                _context.SanPhams.Remove(product);
                 await _context.SaveChangesAsync();
 
                 TempData["success"] = "Sản phẩm đã được xóa!";

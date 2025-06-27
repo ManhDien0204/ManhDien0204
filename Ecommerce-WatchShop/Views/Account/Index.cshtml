@@ -1,4 +1,4 @@
-﻿@model Ecommerce_WatchShop.Models.Customer
+﻿@model Ecommerce_WatchShop.Models.KhachHang
 @{
     ViewData["Title"] = "Thông tin tài khoản"; 
 } 
@@ -65,21 +65,21 @@
                                             <br />
                                             <span class="custom-radio">
                                                 <input type="radio" value="1"
-                                                       name="Gender" @(Model.Gender == true ? "checked" : "") readonly> Nam
+                                                       name="Gender" @(Model.GioiTinh == true ? "checked" : "") readonly> Nam
                                             </span>
                                             <span class="custom-radio">
                                                 <input type="radio" value="2"
-                                                       name="Gender" @(Model.Gender == false ? "checked" : "") readonly> Nữ
+                                                       name="Gender" @(Model.GioiTinh == false ? "checked" : "") readonly> Nữ
                                             </span>
                                         </div>
                                         <br>
                                         <div class="default-form-box mb-20">
                                             <label>Tên hiển thị</label>
-                                            <input type="text" value="@Model.DisplayName" readonly>
+                                            <input type="text" value="@Model.TenHienThi" readonly>
                                         </div>
                                         <div class="default-form-box mb-20">
                                             <label>Họ tên</label>
-                                            <input type="text" value="@Model.FullName" readonly>
+                                            <input type="text" value="@Model.HoTen" readonly>
                                         </div>
                                         <div class="default-form-box mb-20">
                                             <label>Email</label>
@@ -87,15 +87,15 @@
                                         </div>
                                         <div class="default-form-box mb-20">
                                             <label>Số điện thoại</label>
-                                            <input type="text"  value="@Model.Phone" readonly>
+                                            <input type="text"  value="@Model.SoDienThoai" readonly>
                                         </div>
                                         <div class="default-form-box mb-20">
                                             <label>Địa chỉ</label>
-                                            <input type="text" value="@Model.Address" readonly>
+                                            <input type="text" value="@Model.DiaChi" readonly>
                                         </div>
                                         <div class="default-form-box mb-20">
                                             <label>Ngày sinh</label>
-                                            <input type="date" value="@(Model.Dob.HasValue ? Model.Dob.Value.ToString("yyyy-MM-dd") : "")" readonly/>
+                                            <input type="date" value="@(Model.NgaySinh.HasValue ? Model.NgaySinh.Value.ToString("yyyy-MM-dd") : "")" readonly/>
                                         </div>
                                         <br>
                                         <div class="save_button mt-3">

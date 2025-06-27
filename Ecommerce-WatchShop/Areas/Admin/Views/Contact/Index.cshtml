@@ -1,7 +1,7 @@
 ﻿@{
 	ViewData["Title"] = "Quản lý liên hệ";
 }
-@model IEnumerable<Ecommerce_WatchShop.Models.Contact>
+@model IEnumerable<Ecommerce_WatchShop.Models.LienHe>
 <div class="container-xl">
 
 	<div class="row g-3 mb-4 align-items-center justify-content-between">
@@ -49,12 +49,12 @@
 										@foreach (var contact in Model)
 										{
 											<tr>
-												<td class="cell">@contact.FullName</td>
+												<td class="cell">@contact.HoTen</td>
 												<td class="cell">@contact.Email</td>
-												<td class="cell">@contact.Subject</td>
-												<td class="cell">@contact.Note</td>
+												<td class="cell">@contact.TieuDe</td>
+												<td class="cell">@contact.GhiChu</td>
 												<td class="cell">
-												@if (contact.Status == 0)
+												@if (contact.TrangThai == 0)
 													{
 														<span class="badge bg-warning">Chưa xử lý</span>
 													}
@@ -64,9 +64,9 @@
 													}
 												</td>
 												<td class="cell">
-													<a class="btn editContact" data-bs-toggle="modal" data-bs-target="#editContactModal" data-id="@contact.ContactId" data-status="@contact.Status"><i class="bi bi-pencil-square" style="font-size: 1.2rem"></i></a>
+													<a class="btn editContact" data-bs-toggle="modal" data-bs-target="#editContactModal" data-id="@contact.MaLienHe" data-status="@contact.TrangThai"><i class="bi bi-pencil-square" style="font-size: 1.2rem"></i></a>
 													    <form method="post" asp-action="Delete" asp-controller="Contact"  style="display:inline-block;" onsubmit="return confirm('Bạn có chắc chắn muốn xoá liên hệ này chứ?');">
-															<input type="hidden" name="id" value="@contact.ContactId"/>
+															<input type="hidden" name="id" value="@contact.MaLienHe"/>
 															<button type="submit" class="btn">
 																<i class="bi bi-trash" style="font-size: 1.2rem"></i>
 															</button>

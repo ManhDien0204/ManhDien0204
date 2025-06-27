@@ -2,7 +2,7 @@ namespace Ecommerce_WatchShop.Models.ViewModels
 {
     public class AboutVM
     {
-        public About? About { get; set; }
-        public List<Policy>? Policies { get; set; }
+        public GioiThieu? GioiThieus { get; set; }
+        public List<ChinhSach>? ChinhSachs { get; set; }
     }
 }
