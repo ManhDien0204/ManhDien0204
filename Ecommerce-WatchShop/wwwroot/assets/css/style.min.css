@@ -36884,7 +36884,7 @@ input {
     }
 
     .filter-type-price input {
-        width: 100px;
+        width: 150px;
         display: inline-block;
         text-align: right
     }

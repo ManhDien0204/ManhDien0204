@@ -41,6 +41,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
+builder.Services.AddLogging(logging =>
+{
+    logging.AddConsole(); // Log ra console
+    logging.AddDebug();  // Log ra Debug output
+});
 
 var app = builder.Build();
 
@@ -57,6 +64,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseSession();
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();

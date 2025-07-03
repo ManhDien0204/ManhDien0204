@@ -19,28 +19,31 @@ namespace Ecommerce_WatchShop.Controllers
 
         public async Task<IActionResult> Index(string? search, string? categories = "", string? brands = "", double? minPrice = null, double? maxPrice = null, int page = 1, int? gender = null)
         {
-            var pageSize = 5;  // Số sản phẩm mỗi trang
+            var pageSize = 5;
             var products = _context.SanPhams.AsQueryable();
 
+            // Lọc theo tìm kiếm
             if (!string.IsNullOrEmpty(search))
             {
                 search = search.ToLower().Trim();
                 products = products.Where(p =>
-                    p.TenSanPham.ToLower().Contains(search) ||
-                    p.MoTaNgan.ToLower().Contains(search));
+                    p.TenSanPham != null && p.TenSanPham.ToLower().Contains(search) ||
+                    p.MoTaNgan != null && p.MoTaNgan.ToLower().Contains(search));
             }
 
-            // Lọc theo category
+            // Lọc theo danh mục (xử lý khi Slug là NULL)
             if (!string.IsNullOrEmpty(categories))
             {
-                products = products.Where(p => p.DanhMuc!.Slug == categories);
+                products = products.Where(p => p.DanhMuc != null && p.DanhMuc.Slug == categories);
             }
 
-            // Lọc theo brand
+            // Lọc theo thương hiệu (xử lý khi Slug là NULL)
             if (!string.IsNullOrEmpty(brands))
             {
-                products = products.Where(p => p.ThuongHieu!.Slug == brands);
+                products = products.Where(p => p.ThuongHieu != null && p.ThuongHieu.Slug == brands);
             }
+
+            // Lọc theo giá
             if (minPrice.HasValue)
             {
                 products = products.Where(p => p.Gia >= minPrice.Value);
@@ -50,43 +53,53 @@ namespace Ecommerce_WatchShop.Controllers
                 products = products.Where(p => p.Gia <= maxPrice.Value);
             }
 
-            if (gender is not null)
+            // Lọc theo giới tính
+            if (gender.HasValue)
             {
-                products = products.Where(p => p.GioiTinh == (gender.Value == 1 ? 1 : 0));
+                var genderString = gender switch
+                {
+                    1 => "Nam",
+                    2 => "Nữ",
+                    3 => "Unisex",
+                    _ => null
+                };
+                if (genderString != null)
+                {
+                    products = products.Where(p => p.GioiTinh == genderString);
+                }
             }
+
             // Lấy tổng số sản phẩm sau khi áp dụng các bộ lọc
             var totalProducts = await products.CountAsync();
             var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
 
-            // Lấy các sản phẩm cho trang hiện tại
+            // Lấy các sản phẩm cho trang hiện tại, sắp xếp theo NgayTao giảm dần
             var result = await products
-                .Where(p => p.DaXoa == 0)
+                .Where(p => p.DaXoa == 0 && p.TrangThai == 1) // Chỉ lấy sản phẩm hiển thị và không bị xóa
                 .Include(p => p.DanhGiaSanPhams)
-                .Skip((page - 1) * pageSize) // Bỏ qua các sản phẩm của các trang trước
-                .Take(pageSize) // Lấy sản phẩm cho trang hiện tại
+                .OrderByDescending(p => p.NgayTao) // Sắp xếp theo ngày tạo giảm dần (mới nhất lên đầu)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
                 .Select(p => new ProductVM
                 {
                     ProductId = p.MaSanPham,
-                    ProductName = p.TenSanPham!,
-                    Image = p.HinhAnh ?? "",
+                    ProductName = p.TenSanPham ?? "Chưa có tên",
+                    Image = string.IsNullOrEmpty(p.HinhAnh) ? "/images/default-image.jpg" : p.HinhAnh,
                     Price = p.Gia,
-                    ShortDescription = p.MoTaNgan!,
-                    ProductRating = p.DanhGiaSanPhams.Any()
-                        ? p.DanhGiaSanPhams.Average(r => (double)r.DiemDanhGia!) : 0,
+                    ShortDescription = p.MoTaNgan ?? "Chưa có mô tả",
+                    ProductRating = p.DanhGiaSanPhams.Any() ? p.DanhGiaSanPhams.Average(r => r.DiemDanhGia ?? 0) : 0,
                     Slug = p.Slug
                 })
                 .ToListAsync();
 
-            // Tạo ViewModel cho phân trang
             var viewModel = new PagedProductListVM
             {
-                Products = result,  // Danh sách sản phẩm cho trang hiện tại
+                SanPhams = result,
                 CurrentPage = page,
                 TotalPages = totalPages,
                 PageSize = pageSize
             };
 
-            // Trả về view với ViewModel
             return View(viewModel);
         }
         public async Task<IActionResult> SearchProduct(string? search = "", int page = 1)
@@ -106,8 +119,9 @@ namespace Ecommerce_WatchShop.Controllers
             var result = await products
                 .Where(p => p.TrangThai == 1)
                 .Include(p => p.DanhGiaSanPhams)
-                .Skip((page - 1) * pageSize) // Bỏ qua các sản phẩm của các trang trước
-                .Take(pageSize) // Lấy sản phẩm cho trang hiện tại
+                .OrderByDescending(p => p.NgayTao) // Sắp xếp theo ngày tạo giảm dần
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
                 .Select(p => new ProductVM
                 {
                     ProductId = p.MaSanPham,
@@ -121,7 +135,7 @@ namespace Ecommerce_WatchShop.Controllers
                 }).ToListAsync();
             var viewModel = new PagedProductListVM
             {
-                Products = result,  // Danh sách sản phẩm cho trang hiện tại
+                SanPhams = result,  // Danh sách sản phẩm cho trang hiện tại
                 CurrentPage = page,
                 TotalPages = totalPages,
                 PageSize = pageSize
@@ -135,7 +149,7 @@ namespace Ecommerce_WatchShop.Controllers
             {
                 return NotFound();
             }    
-            var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "CustomerId");
+            var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "MaKhachHang");
             var customerId = customerIdClaim != null ? int.Parse(customerIdClaim.Value) : (int?)null;
             // Lấy sản phẩm, đánh giá, và bình luận từ cơ sở dữ liệu
             var product = await _context.SanPhams
@@ -182,7 +196,7 @@ namespace Ecommerce_WatchShop.Controllers
         [Route("ProductDetail/{id}/AddReview")]
         public IActionResult AddReview(int id, string content, int rating)
         {
-            var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "CustomerId");
+            var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "MaKhachHang");
             int? customerId = customerIdClaim != null ? int.Parse(customerIdClaim.Value) : (int?)null;
             // Kiểm tra sản phẩm tồn tại
             var product = _context.SanPhams.Find(id);
@@ -211,7 +225,7 @@ namespace Ecommerce_WatchShop.Controllers
             _context.DanhGiaSanPhams.Add(productRating);
             _context.SaveChanges();
 
-            return RedirectToAction("ProductDetail", new { id }); // Quay lại trang chi tiết sản phẩm
+            return RedirectToAction("ProductDetail", new { slug = product.Slug }); // Quay lại trang chi tiết sản phẩm
         }
         //public IActionResult AddToCart([FromBody] CartRequest request)
         //{
@@ -262,7 +276,44 @@ namespace Ecommerce_WatchShop.Controllers
         //    _context.SaveChanges();
         //    return Ok(new { message = "Sản phẩm đã được thêm vào giỏ hàng!", success = true });
         //}
+        //Thêm sản phẩm yêu thích
+        [HttpPost]
+        public IActionResult AddToWishlist(int productId)
+        {
+            var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "MaKhachHang");
+            if (customerIdClaim == null)
+            {
+                return Json(new { success = false, message = "Vui lòng đăng nhập." });
+            }
 
+            var customerId = int.Parse(customerIdClaim.Value);
+            var product = _context.SanPhams.Find(productId);
+            if (product == null)
+            {
+                return Json(new { success = false, message = "Sản phẩm không tồn tại." });
+            }
+
+            var existingWishlist = _context.YeuThichs
+                .FirstOrDefault(yt => yt.MaKhachHang == customerId && yt.MaSanPham == productId);
+
+            if (existingWishlist == null)
+            {
+                var wishlistItem = new YeuThich
+                {
+                    MaKhachHang = customerId,
+                    MaSanPham = productId
+                };
+                _context.YeuThichs.Add(wishlistItem);
+                _context.SaveChanges();
+                return Json(new { success = true, message = "Thêm vào yêu thích thành công.", isFavorite = true });
+            }
+            else
+            {
+                _context.YeuThichs.Remove(existingWishlist);
+                _context.SaveChanges();
+                return Json(new { success = true, message = "Xóa khỏi yêu thích thành công.", isFavorite = false });
+            }
+        }
 
     }
 }

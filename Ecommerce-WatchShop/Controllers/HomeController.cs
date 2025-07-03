@@ -127,7 +127,10 @@ public class HomeController : Controller
             return PartialView("_LoginPartial", loginVM);
         }
 
-        var account = await _context.TaiKhoans.FirstOrDefaultAsync(a => a.TenDangNhap == loginVM.Username);
+        var account = await _context.TaiKhoans
+            .Include(a => a.KhachHang)
+            .FirstOrDefaultAsync(a => a.TenDangNhap == loginVM.Username);
+
         if (account == null)
         {
             ModelState.AddModelError("Username", "Tài khoản không tồn tại");
@@ -145,30 +148,27 @@ public class HomeController : Controller
             ModelState.AddModelError("Username", "Không có quyền truy cập");
             return PartialView("_LoginPartial", loginVM);
         }
-        var customer = await _context.TaiKhoans.FirstOrDefaultAsync(c => c.MaTaiKhoan == account.MaTaiKhoan);
 
+        var customer = account.KhachHang;
         var claims = new List<Claim>
-        {
-            new Claim("MaTaiKhoan", account.MaTaiKhoan.ToString()) // Claim cho AccountId
-        };
-        if (customer != null && customer.MaTaiKhoan > 0)
-        {
-            claims.Add(new Claim("MaTaiKhoan", customer.MaTaiKhoan.ToString())); // Claim cho CustomerId
+    {
+        new Claim(ClaimTypes.NameIdentifier, account.MaTaiKhoan.ToString()),
+        new Claim("MaTaiKhoan", account.MaTaiKhoan.ToString())
+    };
 
-        }
+        // Thêm MaKhachHang, sử dụng 0 nếu chưa có KhachHang
+        claims.Add(new Claim("MaKhachHang", (customer?.MaKhachHang ?? 0).ToString()));
 
         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
         var authProperties = new AuthenticationProperties
         {
             IsPersistent = loginVM.RememberMe,
-            ExpiresUtc = DateTime.Now.AddDays(5),
+            ExpiresUtc = DateTimeOffset.Now.AddDays(5),
         };
 
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
 
-        //HttpContext.Session.SetInt32("AccountId", account.AccountId);
-        //HttpContext.Session.SetInt32("AccountId",account.Customerid);
         TempData["success"] = "Đăng nhập thành công";
         if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
         {
@@ -178,9 +178,33 @@ public class HomeController : Controller
         {
             return Json(new { redirectToUrl = Url.Action("Index", "Home") });
         }
-
     }
+    //Trang yêu thích
+    [HttpGet]
+    public async Task<IActionResult> Favorite()
+    {
+        var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "CustomerId");
+        if (customerIdClaim == null)
+        {
+            return RedirectToAction("LoginPartial");
+        }
 
+        var customerId = int.Parse(customerIdClaim.Value);
+        var favorites = await _context.YeuThichs
+            .Where(yt => yt.MaKhachHang == customerId)
+            .Include(yt => yt.SanPham)
+            .Select(yt => new FavoriteVM
+            {
+                ProductId = yt.SanPham.MaSanPham,
+                Name = yt.SanPham.TenSanPham ?? "Chưa có tên",
+                Price = yt.SanPham.Gia,
+                Image = yt.SanPham.HinhAnh ?? "default-image.jpg",
+                Slug = yt.SanPham.Slug ?? ""
+            })
+            .ToListAsync();
+
+        return View(favorites); // Trả về danh sách FavoriteVM trực tiếp
+    }
 
 
     public IActionResult Privacy()

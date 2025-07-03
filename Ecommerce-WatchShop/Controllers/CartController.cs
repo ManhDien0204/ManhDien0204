@@ -25,7 +25,7 @@ public class CartController : Controller
             return View(Carts);
         }
 
-        var customerIdClaim =  User.Claims.FirstOrDefault(c => c.Type == "CustomerId");
+        var customerIdClaim =  User.Claims.FirstOrDefault(c => c.Type == "MaKhachHang");
         int? customerId = customerIdClaim != null ? int.Parse(customerIdClaim.Value) : (int?)null;
 
         if (customerId == null)
@@ -74,7 +74,7 @@ public class CartController : Controller
                 Slug = products.Slug!,
                 ProductName = products.TenSanPham!,
                 Image = products.HinhAnh,
-                Price = products.Gia ?? 0,
+                Price = products.Gia ,
                 Quantity = quantity,
 
             };

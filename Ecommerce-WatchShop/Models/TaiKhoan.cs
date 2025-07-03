@@ -14,7 +14,7 @@ public partial class TaiKhoan
 
     public int? MaVaiTro { get; set; }
 
-    public virtual ICollection<KhachHang> KhachHangs { get; set; } = new List<KhachHang>();
+    public KhachHang KhachHang { get; set; }
 
     public virtual VaiTro? VaiTro { get; set; }
 }

@@ -98,7 +98,7 @@
                 </div> <!-- End Single Sidebar Widget --> *@
             </div> <!-- End Sidebar Area -->
             <div class="col-lg-9">
-                <h5>Có @Model.Products.Count() sản phẩm</h5>
+                <h5>Có @Model.SanPhams.Count() sản phẩm</h5>
 
                 <!-- Start Shop Product Sorting Section -->
                 <div class="shop-sort-section">
@@ -121,7 +121,7 @@
                                     <!-- Start List View Product -->
                                     <div class="tab-pane active show sort-layout-single" id="layout-list">
                                         <div class="row">
-                                            @foreach (var item in Model.Products)
+                                            @foreach (var item in Model.SanPhams)
                                             {
                                                 <div class="col-12">
                                                     <!-- Start Product Defautlt Single -->

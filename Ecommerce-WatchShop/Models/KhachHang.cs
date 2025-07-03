@@ -23,11 +23,11 @@ public partial class KhachHang
 
     public int? MaTaiKhoan { get; set; }
 
-    public virtual TaiKhoan? TaiKhoan { get; set; }
+    public TaiKhoan TaiKhoan { get; set; }
 
     public virtual ICollection<HoaDon> Bills { get; set; } = new List<HoaDon>();
 
-    public virtual ICollection<YeuThich> Favorites { get; set; } = new List<YeuThich>();
+    public virtual ICollection<YeuThich> YeuThichs { get; set; } = new List<YeuThich>();
 
     public virtual ICollection<BinhLuanSanPham> ProductComments { get; set; } = new List<BinhLuanSanPham>();
 

@@ -14,7 +14,8 @@
                                 <div class="product-default-single-item product-color--pink swiper-slide">
                                     <div class="image-box">
                                         <a asp-controller="Product" asp-action="ProductDetail" asp-route-slug="@item.Slug" class="image-link">
-                                            <img src="~/images/@item.Image" alt="">
+                                            <img src="@Url.Content(item.Image ?? "/images/default-image.jpg")" alt="@item.ProductName"
+                                                 onerror="this.src='/images/default-image.jpg'; this.onerror=null;">
                                         </a>
                                         <div class="action-link">
                                             <div class="action-link-left">
@@ -26,7 +27,7 @@
                                     <div class="content">
                                         <div class="content-left">
                                             <h6 class="title">
-                                                <a asp-controller="Product" asp-action="ProductDetail">
+                                                <a asp-controller="Product" asp-action="ProductDetail" asp-route-slug="@item.Slug">
                                                     @item.ProductName
                                                 </a>
                                             </h6>

@@ -60,9 +60,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Curnon Kashmir.png",
                         TenSanPham = "Curnon Kashmir",
-                        MaDanhMuc = donghoco?.MaDanhMuc,
-                        MaThuongHieu = curnon?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghoco.MaDanhMuc,
+                        MaThuongHieu = curnon.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 2279000,
                         MoTaNgan = "Đồng hồ sang trọng dành cho nam",
                         MoTa = "Đồng hồ nam Curnon Kashmir Classic có thiết kế tối giản, mang phong cách trẻ trung; Dây da, có kim rốn, Mặt kính Sapphire chống trầy xước, Chống nước 3ATM…",
@@ -79,9 +79,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Citizen-BI5104-57e.png",
                         TenSanPham = "Citizen BI5104 57e",
-                        MaDanhMuc = donghopin?.MaDanhMuc,
-                        MaThuongHieu = citizen?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghopin.MaDanhMuc,
+                        MaThuongHieu = citizen.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 5280000,
                         MoTaNgan = "Citizen BI5104-57E – Nam – Quartz (Pin) – Mặt Số 41mm, Kính Cứng, Chống Nước 5ATM",
                         MoTa = "Citizen BI5104-57E gây ấn tượng bởi cấu trúc Cushion Lug (vấu đệm) mang đến phong cách thể thao sang trọng. Bộ máy thạch anh in-house đảm bảo thời gian luôn hiển thị chính xác trong khoảng +/- 15 giây mỗi tháng.",
@@ -98,9 +98,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Citizen-Tsuyosa.png",
                         TenSanPham = "Citizen Tsuyosa",
-                        MaDanhMuc = donghoco?.MaDanhMuc,
-                        MaThuongHieu = citizen?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghoco.MaDanhMuc,
+                        MaThuongHieu = citizen.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 12485000,
                         MoTaNgan = "Citizen Tsuyosa NJ0151-88M – Nam – Kính Sapphire – Mặt Số 40mm",
                         MoTa = "Citizen Tsuyosa NJ0151-88M mang đến hơi thở tươi mới từ đại dương, theo đuổi phong cách năng động, trẻ trung, kích thước mặt số 40mm phù hợp đa số với quý ông.",
@@ -117,9 +117,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Citizen-NH9130-84L.png",
                         TenSanPham = "Citizen NH9130 84L",
-                        MaDanhMuc = donghoco?.MaDanhMuc,
-                        MaThuongHieu = citizen?.MaThuongHieu,
-                        GioiTinh = 2,
+                        MaDanhMuc = donghoco.MaDanhMuc,
+                        MaThuongHieu = citizen.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 10085000,
                         MoTaNgan = "Citizen NH9130-84L – Nam – Kính Sapphire – Automatic – Trữ Cót 40 Giờ, Họa Tiết Guilloche, Open Heart",
                         MoTa = "Citizen Automatic NH9130-84L thiết kế Open heart cùng họa tiết Guilloche hoàn toàn mới mang đến diện mạo nam tính, lịch lãm. Trang bị bộ máy cơ Japan Movt trữ cót 40 giờ, tự động lên cót khi đeo liên tục mỗi ngày.",
@@ -136,9 +136,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Citizen-Eco-Drive.png",
                         TenSanPham = "Citizen Eco Drive",
-                        MaDanhMuc = donghopin?.MaDanhMuc,
-                        MaThuongHieu = citizen?.MaThuongHieu,
-                        GioiTinh = 0,
+                        MaDanhMuc = donghopin.MaDanhMuc,
+                        MaThuongHieu = citizen.MaThuongHieu,
+                        GioiTinh = "Nữ",
                         Gia = 7585000,
                         MoTaNgan = "Citizen Eco-Drive EM0506-77A – Nữ – Kính Cứng – Eco-Drive (Năng Lượng Ánh Sáng) – Mặt Số 32mm",
                         MoTa = "Mẫu Citizen Eco-Drive EM0506-77A phiên bản dây đeo tone màu vàng demi, nền mặt số xà cừ với họa tiết Guilloche thẩm mỹ. Mặt số 32mm với trọng lượng vừa phải phù hợp với nữ giới, sử dụng năng lượng mặt trời có tuổi thọ dài giúp tiết kiệm chi phí, cực kỳ trang nhã và thanh lịch.",
@@ -155,9 +155,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Citizen-EM0863-53D.png",
                         TenSanPham = "Citizen EM0863-53D",
-                        MaDanhMuc = donghonangluong?.MaDanhMuc,
-                        MaThuongHieu = citizen?.MaThuongHieu,
-                        GioiTinh = 0,
+                        MaDanhMuc = donghonangluong.MaDanhMuc,
+                        MaThuongHieu = citizen.MaThuongHieu,
+                        GioiTinh = "Nữ",
                         Gia = 12685000,
                         MoTaNgan = "Citizen EM0863-53D – Nữ – Eco-Drive (Năng Lượng Ánh Sáng) – Mặt Số 25mm, Kính Cứng, Chống Nước 5ATM",
                         MoTa = "Citizen Silhouette Crystal EM0863-53D thiết kế mạ vàng PVD sang trọng kết hợp những viên đá pha lê tuyển chọn có độ tán sắc cao, lấp lánh thu hút ánh nhìn. Trang bị bộ máy Eco-Drive hoạt động cực kỳ chính xác mà không phải thay pin thường xuyên.",
@@ -174,9 +174,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Doxa-Executive-Slim.png",
                         TenSanPham = "Doxa Executive Slim",
-                        MaDanhMuc = donghopin?.MaDanhMuc,
-                        MaThuongHieu = doxa?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghopin.MaDanhMuc,
+                        MaThuongHieu = doxa.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 23250000,
                         MoTaNgan = "Doxa Executive Slim D201RSV – Nam – Kính Sapphire – Quartz (Pin) – Mặt Số 40mm, Swiss Made, Chống Nước 5ATM",
                         MoTa = "Mẫu Doxa D201RSV vẻ ngoài sang trọng với mẫu vạch số tạo hình mỏng mang lại sự tinh tế dành cho phái mạnh đầy nổi bật khi các chi tiết kim chỉ được phủ tông vàng hồng trẻ trung đầy cuốn hút.",
@@ -193,9 +193,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Doxa-x-Dorian-Ho-Earlymoon.png",
                         TenSanPham = "Doxa x Dorian Ho Earlymoon",
-                        MaDanhMuc = donghopin?.MaDanhMuc,
-                        MaThuongHieu = doxa?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghopin.MaDanhMuc,
+                        MaThuongHieu = doxa.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 2290000,
                         MoTaNgan = "Doxa x Dorian Ho Earlymoon D226RGY – Nam – Kính Sapphire – Quartz (Pin) – Mặt số trẻ trung cùng giờ thế giới tiện dụng – Dây vải Nato bền bỉ mạnh mẽ",
                         MoTa = "Mẫu Doxa D226RGY phiên bản dây vải Nato tone màu xám đen, kết hợp vỏ kim loại mạ vàng hồng, cùng tính năng GMT tiện dụng, tạo nên vẻ ngoài thời trang năng động cho các chàng trong mọi tình huống.",
@@ -212,9 +212,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Doxa-Noble.png",
                         TenSanPham = "Doxa Noble",
-                        MaDanhMuc = donghopin?.MaDanhMuc,
-                        MaThuongHieu = doxa?.MaThuongHieu,
-                        GioiTinh = 0,
+                        MaDanhMuc = donghopin.MaDanhMuc,
+                        MaThuongHieu = doxa.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 25030000,
                         MoTaNgan = "Doxa Noble D132TWH – Nữ – Kính Sapphire – Quartz (Pin) – Mặt số Rococo cùng 8 viên kim cương tự nhiên – Họa tiết Guilloche phong cách Byzantine",
                         MoTa = "Mẫu Doxa Noble D132TWH có thiết kế tinh xảo với họa tiết Guilloché, đính 8 viên kim cương, cùng bộ máy Swiss Made, hứa hẹn mang đên phong thái tự tin và sang trọng cho quý cô.",
@@ -231,9 +231,9 @@ namespace Ecommerce_WatchShop
                     {
                         HinhAnh = "Seiko-SSC943P1.png",
                         TenSanPham = "Seiko Prospex Speedtimer SSC943P1",
-                        MaDanhMuc = donghonangluong?.MaDanhMuc,
-                        MaThuongHieu = seiko?.MaThuongHieu,
-                        GioiTinh = 1,
+                        MaDanhMuc = donghonangluong.MaDanhMuc,
+                        MaThuongHieu = seiko.MaThuongHieu,
+                        GioiTinh = "Nam",
                         Gia = 23600000,
                         MoTaNgan = "Seiko Prospex Speedtimer SSC943P1 là mẫu đồng hồ thể thao sang trọng với chức năng: Chronograph – Tachymeter – Lịch ngày – Kim xăng báo năng lượng còn lại.",
                         MoTa = "Seiko Prospex Speedtimer SSC943P1 là mẫu đồng hồ bấm giờ thể thao sang trọng, sử dụng pin năng lượng ánh sáng. Thuộc BST Seiko Prospex Speedtimer ra mắt lần đầu tiên năm 1969 – Kỷ nguyên của thời trang, âm nhạc và mô tô thể thao.",
@@ -538,43 +538,8 @@ namespace Ecommerce_WatchShop
                 );
                 await _context.SaveChangesAsync();
             }
-            if (!_context.ChiTietHoaDons.Any())
-            {
-                await _context.ChiTietHoaDons.AddRangeAsync
-                (
-                    new ChiTietHoaDon { MaHoaDon = 1, MaSanPham = 1, Gia = 2279000, SoLuong = 2, TongTien = 4558000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 1, MaSanPham = 2, Gia = 5280000, SoLuong = 2, TongTien = 10560000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 2, MaSanPham = 3, Gia = 12485000, SoLuong = 1, TongTien = 12485000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 2, MaSanPham = 4, Gia = 10085000, SoLuong = 2, TongTien = 20170000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 3, MaSanPham = 5, Gia = 7585000, SoLuong = 1, TongTien = 7585000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 3, MaSanPham = 6, Gia = 12685000, SoLuong = 2, TongTien = 25370000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 4, MaSanPham = 7, Gia = 23250000, SoLuong = 1, TongTien = 23250000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 4, MaSanPham = 8, Gia = 2290000, SoLuong = 2, TongTien = 4580000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 5, MaSanPham = 9, Gia = 25030000, SoLuong = 3, TongTien = 75090000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 6, MaSanPham = 10, Gia = 23600000, SoLuong = 2, TongTien = 47200000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 6, MaSanPham = 1, Gia = 2279000, SoLuong = 2, TongTien = 4558000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 7, MaSanPham = 4, Gia = 10085000, SoLuong = 3, TongTien = 30255000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 8, MaSanPham = 5, Gia = 7585000, SoLuong = 1, TongTien = 7585000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 9, MaSanPham = 6, Gia = 12685000, SoLuong = 5, TongTien = 63425000 },
-
-                    new ChiTietHoaDon { MaHoaDon = 10, MaSanPham = 8, Gia = 2290000, SoLuong = 5, TongTien = 11450000 }
-
-                );
-                //await _context.SaveChangesAsync();
-            }
+            
+            
         }
 
     }

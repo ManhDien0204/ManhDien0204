@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lvpwbohmj0</Fingerprint>
-      <Integrity>ASbd6VFcbv1vcf7Gp4znN/ljXTASxRjNShmXYKXu/rk=</Integrity>
+      <Fingerprint>u0bl6jbnsd</Fingerprint>
+      <Integrity>Do0QtDC9kNkyVXQGvmVscp7L8Umm475MhWyKxmvYpbA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\style.min.css'))</OriginalItemSpec>
@@ -44784,6 +44784,78 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/1e7a5aea-8315-48e9-90ae-41f7db5096d8.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tr926e8fd5</Fingerprint>
+      <Integrity>B2QAc+kHeSq1yBg1o+8r51Lx0bc/wcMletHrNC9FNUc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7047nl5v82</Fingerprint>
+      <Integrity>Bwv3A9F31AscQkxzZusXG5aj170STM+G4l7wC3vcXw8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tsmto8ynyl</Fingerprint>
+      <Integrity>U8/wkYMFGY/feRBNEErnZ7F6kH+oIYTCf2bWyxRBims=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tr926e8fd5</Fingerprint>
+      <Integrity>B2QAc+kHeSq1yBg1o+8r51Lx0bc/wcMletHrNC9FNUc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2ecbebef-8fb8-4d3e-9163-f0fb1dfd5a19_Untitled.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce-WatchShop</SourceId>
@@ -44820,6 +44892,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\8869b8fe-f2a5-4cb5-bd61-c7a9e0b1cd17_Untitled.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tr926e8fd5</Fingerprint>
+      <Integrity>B2QAc+kHeSq1yBg1o+8r51Lx0bc/wcMletHrNC9FNUc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Artboard-1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce-WatchShop</SourceId>
@@ -44837,6 +44927,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Artboard-1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tr926e8fd5</Fingerprint>
+      <Integrity>B2QAc+kHeSq1yBg1o+8r51Lx0bc/wcMletHrNC9FNUc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\blog\Blog_1.jpg'))">
       <SourceType>Package</SourceType>
@@ -45612,6 +45720,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Curnon_Kashmir_Silver___Abyss-removebg-preview.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-image.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/default-image.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y5r2oaiujo</Fingerprint>
+      <Integrity>BhYBj5zos1xwZIvH5rojU/4DFT+/QxwnH2hC8HrwQ5o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-image.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-large.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce-WatchShop</SourceId>
@@ -45756,6 +45882,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Doxa-x-Dorian-Ho-Earlymoon-2.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\e7e59694-465d-4e59-a2e6-e875201e09d0.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/e7e59694-465d-4e59-a2e6-e875201e09d0.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>od1chydggy</Fingerprint>
+      <Integrity>/NoVZi03h3tO+jr5BUE9gSEcPoA64vrK7EnQLefTKDA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\e7e59694-465d-4e59-a2e6-e875201e09d0.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/f9d52544-9c91-40fd-bdc7-6d825c0046c3.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tr926e8fd5</Fingerprint>
+      <Integrity>B2QAc+kHeSq1yBg1o+8r51Lx0bc/wcMletHrNC9FNUc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Hop-Seiko.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce-WatchShop</SourceId>
@@ -45845,6 +46007,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\logo\0bbe1cee-793a-4b21-ba59-30dd55046543_Untitled.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\logo\logo-moi.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/logo/logo-moi.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h6tlk005lt</Fingerprint>
+      <Integrity>+VqwUyfGdw0BfoF9InDZ/ZoQJyH356aOgU04iUe40lE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\logo\logo-moi.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Logo_nho.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce-WatchShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce-WatchShop</BasePath>
+      <RelativePath>Images/Logo_nho.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3zkas3oin0</Fingerprint>
+      <Integrity>Ue+Jg+kO0/zIMlO75eyRKY8QjyubLa/MvhxarTJsNug=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Logo_nho.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\mtp.jpg'))">
       <SourceType>Package</SourceType>

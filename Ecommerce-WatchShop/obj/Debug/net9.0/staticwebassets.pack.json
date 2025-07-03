@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\Ecommerce-WatchShop.a85erk1l93.bundle.scp.css"
     },
     {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png",
+      "PackagePath": "staticwebassets\\Images\\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg",
+      "PackagePath": "staticwebassets\\Images\\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg",
+      "PackagePath": "staticwebassets\\Images\\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png",
+      "PackagePath": "staticwebassets\\Images\\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png"
+    },
+    {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\2ecbebef-8fb8-4d3e-9163-f0fb1dfd5a19_Untitled.jpg",
       "PackagePath": "staticwebassets\\Images\\2ecbebef-8fb8-4d3e-9163-f0fb1dfd5a19_Untitled.jpg"
     },
     {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\8869b8fe-f2a5-4cb5-bd61-c7a9e0b1cd17_Untitled.jpg",
       "PackagePath": "staticwebassets\\Images\\8869b8fe-f2a5-4cb5-bd61-c7a9e0b1cd17_Untitled.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png",
+      "PackagePath": "staticwebassets\\Images\\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png"
     },
     {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\Artboard-1.jpg",
@@ -157,6 +177,10 @@
       "PackagePath": "staticwebassets\\Images\\Logo.png"
     },
     {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\Logo_nho.jpg",
+      "PackagePath": "staticwebassets\\Images\\Logo_nho.jpg"
+    },
+    {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\Nam.jpg",
       "PackagePath": "staticwebassets\\Images\\Nam.jpg"
     },
@@ -183,6 +207,10 @@
     {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\Seiko-SSC943P1.png",
       "PackagePath": "staticwebassets\\Images\\Seiko-SSC943P1.png"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png",
+      "PackagePath": "staticwebassets\\Images\\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png"
     },
     {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\blog\\Blog_1.jpg",
@@ -261,12 +289,28 @@
       "PackagePath": "staticwebassets\\Images\\c0150824-7de3-44ac-b070-61fece81b1ed_Untitled.jpg"
     },
     {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\default-image.jpg",
+      "PackagePath": "staticwebassets\\Images\\default-image.jpg"
+    },
+    {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\default-large.jpg",
       "PackagePath": "staticwebassets\\Images\\default-large.jpg"
     },
     {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\e7e59694-465d-4e59-a2e6-e875201e09d0.png",
+      "PackagePath": "staticwebassets\\Images\\e7e59694-465d-4e59-a2e6-e875201e09d0.png"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png",
+      "PackagePath": "staticwebassets\\Images\\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png"
+    },
+    {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\logo\\0bbe1cee-793a-4b21-ba59-30dd55046543_Untitled.jpg",
       "PackagePath": "staticwebassets\\Images\\logo\\0bbe1cee-793a-4b21-ba59-30dd55046543_Untitled.jpg"
+    },
+    {
+      "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\logo\\logo-moi.png",
+      "PackagePath": "staticwebassets\\Images\\logo\\logo-moi.png"
     },
     {
       "Id": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\Images\\mtp.jpg",

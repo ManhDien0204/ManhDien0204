@@ -4702,9 +4702,15 @@ wwwroot\assets\scss\index-charts.js
 wwwroot\assets\scss\portal.scss
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png
+wwwroot\Images\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg
+wwwroot\Images\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg
+wwwroot\Images\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png
 wwwroot\Images\2ecbebef-8fb8-4d3e-9163-f0fb1dfd5a19_Untitled.jpg
 wwwroot\Images\8869b8fe-f2a5-4cb5-bd61-c7a9e0b1cd17_Untitled.jpg
+wwwroot\Images\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png
 wwwroot\Images\Artboard-1.jpg
+wwwroot\Images\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png
 wwwroot\Images\blog\Blog_1.jpg
 wwwroot\Images\blog\Blog_1_detail.jpg
 wwwroot\Images\blog\Blog_1_mechanism.jpg
@@ -4748,6 +4754,7 @@ wwwroot\Images\Citizen-Tsuyosa-2.png
 wwwroot\Images\Citizen-Tsuyosa-3.png
 wwwroot\Images\Curnon Kashmir.png
 wwwroot\Images\Curnon_Kashmir_Silver___Abyss-removebg-preview.jpg
+wwwroot\Images\default-image.jpg
 wwwroot\Images\default-large.jpg
 wwwroot\Images\Doxa-Box-2.png
 wwwroot\Images\Doxa-Executive-Slim.png
@@ -4756,11 +4763,15 @@ wwwroot\Images\Doxa-Executive-Slim-3.png
 wwwroot\Images\Doxa-Noble.png
 wwwroot\Images\Doxa-x-Dorian-Ho-Earlymoon.png
 wwwroot\Images\Doxa-x-Dorian-Ho-Earlymoon-2.png
+wwwroot\Images\e7e59694-465d-4e59-a2e6-e875201e09d0.png
+wwwroot\Images\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png
 wwwroot\Images\Hop-Seiko.png
 wwwroot\Images\Hublot bigbang.png
 wwwroot\Images\Hublot_Classic_Fusion_Essential_Grey-removebg-preview.png
 wwwroot\Images\Logo.png
 wwwroot\Images\logo\0bbe1cee-793a-4b21-ba59-30dd55046543_Untitled.jpg
+wwwroot\Images\logo\logo-moi.png
+wwwroot\Images\Logo_nho.jpg
 wwwroot\Images\mtp.jpg
 wwwroot\Images\Nam.jpg
 wwwroot\Images\Nu.jpg

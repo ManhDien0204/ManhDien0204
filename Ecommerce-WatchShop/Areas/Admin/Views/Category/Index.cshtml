@@ -13,7 +13,6 @@
                                 <input type="text" id="search-orders" name="searchorders" class="form-control search-orders" placeholder="Tìm kiếm">
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -43,15 +42,19 @@
                                     {
                                         foreach (var category in Model)
                                         {
+                                            string parentName = "Không có";
+                                            if (category.MaDanhMucCha.HasValue)
+                                            {
+                                                var parentCategory = Model.FirstOrDefault(c => c.MaDanhMuc == category.MaDanhMucCha);
+                                                parentName = parentCategory?.TenDanhMuc ?? "Không tìm thấy";
+                                            }
                                             <tr>
                                                 <td class="cell">@category.MaDanhMuc</td>
                                                 <td class="cell">@category.TenDanhMuc</td>
                                                 <td class="cell">@category.Slug</td>
+                                                <td class="cell">@parentName</td>
                                                 <td class="cell">
-                                                    @(category.MaDanhMucCha.HasValue ? Model.FirstOrDefault(c => c.MaDanhMuc == category.MaDanhMucCha)?.TenDanhMuc : "Không có")
-                                                </td>
-                                                <td class="cell">
-                                                    <a class="btn" href="#" onclick="editCategory(@category.MaDanhMuc, '@category.TenDanhMuc', '@category.MaDanhMucCha')">
+                                                    <a class="btn" href="#" onclick="editCategory(@category.MaDanhMuc, '@category.TenDanhMuc', '@(category.MaDanhMucCha ?? 0)')">
                                                         <i class="bi bi-pencil-square" style="font-size: 1.2rem"></i>
                                                     </a>
                                                     <a class="btn" href="#" onclick="deleteCategory(@category.MaDanhMuc)">
@@ -87,11 +90,11 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="CategoryName" class="form-label">Tên danh mục</label>
-                                <input type="text" class="form-control" id="CategoryName" name="CategoryName" required>
+                                <input type="text" class="form-control" id="CategoryName" name="TenDanhMuc" required>
                             </div>
                             <div class="mb-3">
                                 <label for="ParentId" class="form-label">Danh mục cha</label>
-                                <select class="form-select" id="ParentId" name="ParentId">
+                                <select class="form-select" id="ParentId" name="MaDanhMucCha">
                                     <option value="">-- Không có --</option>
                                     @foreach (var category in Model!)
                                     {
@@ -118,19 +121,15 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form id="editCategoryForm">
-                        <input type="hidden" id="EditCategoryId" name="CategoryId">
+                        <input type="hidden" id="EditCategoryId" name="MaDanhMuc">
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="EditCategoryName" class="form-label">Tên danh mục</label>
-                                <input type="text" class="form-control" id="EditCategoryName" name="CategoryName" required>
+                                <input type="text" class="form-control" id="EditCategoryName" name="TenDanhMuc" required>
                             </div>
-                            @* <div class="mb-3">
-                                <label for="EditSlug" class="form-label">Slug</label>
-                                <input type="text" class="form-control" id="EditSlug" name="Slug" required>
-                            </div> *@
                             <div class="mb-3">
                                 <label for="EditParentId" class="form-label">Danh mục cha</label>
-                                <select class="form-select" id="EditParentId" name="ParentId">
+                                <select class="form-select" id="EditParentId" name="MaDanhMucCha">
                                     <option value="">-- Không có --</option>
                                     @foreach (var category in Model!)
                                     {
@@ -150,39 +149,18 @@
 
         <script>
             $(document).ready(function () {
-                // Xử lý sự kiện submit của form
-                $('#addCategoryModal form').on('submit', function (e) {
-                    e.preventDefault(); // Ngăn hành động submit mặc định
-                    const formData = $(this).serialize(); // Thu thập dữ liệu từ form
+                // Xử lý sự kiện submit của form thêm
+                $('#addCategoryForm').on('submit', function (e) {
+                    e.preventDefault();
+                    const formData = $(this).serialize();
                     $.ajax({
-                        url: '/admin/category/create', // Đường dẫn đến Action
+                        url: '/admin/category/create',
                         type: 'POST',
                         data: formData,
                         success: function (response) {
                             if (response.success) {
                                 alert('Thêm danh mục thành công!');
-                                $('#addCategoryModal').modal('hide'); // Ẩn modal
-                                location.reload(); // Tải lại trang
-                            } else {
-                                alert('Có lỗi xảy ra: ' + response.message);
-                            }
-                        },
-                        error: function (xhr) {
-                            alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
-                        }
-                    });
-                });
-            });
-
-     function deleteCategory(id) {
-                if (confirm('Bạn có chắc chắn muốn xóa danh mục này?')) {
-                    $.ajax({
-                        url: '/admin/category/delete',
-                        type: 'POST',
-                        data: { id: id },
-                        success: function (response) {
-                            if (response.success) {
-                                alert(response.message);
+                                $('#addCategoryModal').modal('hide');
                                 location.reload();
                             } else {
                                 alert('Có lỗi xảy ra: ' + response.message);
@@ -192,66 +170,50 @@
                             alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
                         }
                     });
-                }
-            }
-
-       function editCategory(id, name, parentId) {
-                  console.log("EditCategoryId:", id);
-                $('#EditCategoryId').val(id);
-                $('#EditCategoryName').val(name);
-                $('#EditParentId').val(parentId || "");
-                $('#editCategoryModal').modal('show');
-            }
-            
-            $('#editCategoryForm').on('submit', function (e) {
-                e.preventDefault();
-                const formData = $(this).serialize();
-                       console.log("Form Data Object:", formData);
-                $.ajax({
-                    url: '/admin/category/edit',
-                    type: 'POST',
-                    data: formData,
-                    success: function (response) {
-                        if (response.success) {
-                            alert(response.message);
-                            $('#editCategoryModal').modal('hide');
-                            location.reload();
-                        } else {
-                            alert('Có lỗi xảy ra: ' + response.message);
-                        }
-                    },
-                    error: function (xhr) {
-                        alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
-                    }
                 });
-            });
 
-             
-             $(document).ready(function () {
-                // Xử lý sự kiện submit của form tìm kiếm
-                       $('#search-orders').on('keyup', function (e) {
+                
 
-                    const searchQuery = $('input#search-orders').val().toLowerCase().trim(); // Lấy giá trị từ ô tìm kiếm
-
+                $('#editCategoryForm').on('submit', function (e) {
+                    e.preventDefault();
+                    const formData = $(this).serialize();
                     $.ajax({
-                        url: '/admin/category/search', // Đường dẫn đến Action tìm kiếm
+                        url: '/admin/category/edit',
+                        type: 'POST',
+                        data: formData,
+                        success: function (response) {
+                            if (response.success) {
+                                alert(response.message);
+                                $('#editCategoryModal').modal('hide');
+                                location.reload();
+                            } else {
+                                alert('Có lỗi xảy ra: ' + response.message);
+                            }
+                        },
+                        error: function (xhr) {
+                            alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
+                        }
+                    });
+                });
+
+                // Xử lý tìm kiếm
+                $('#search-orders').on('keyup', function (e) {
+                    const searchQuery = $('input#search-orders').val().toLowerCase().trim();
+                    $.ajax({
+                        url: '/admin/category/search',
                         type: 'GET',
                         data: { searchQuery: searchQuery },
                         success: function (response) {
                             if (response.success) {
-                                   // alert(searchQuery);
-
                                 let rows = '';
                                 response.data.forEach(function (category) {
                                     rows += `<tr>
                                                 <td class="cell">${category.categoryId}</td>
                                                 <td class="cell">${category.categoryName}</td>
                                                 <td class="cell">${category.slug}</td>
+                                                <td class="cell">${category.parentId ? category.parentName : 'Không có'}</td>
                                                 <td class="cell">
-                                                    ${(category.parentId ? category.parentName : 'Không có')}
-                                                </td>
-                                                <td class="cell">
-                                                    <a class="btn" href="#" onclick="editCategory(${category.categoryId}, '${category.categoryName}', '${category.ParentId}')">
+                                                    <a class="btn" href="#" onclick="editCategory(${category.categoryId}, '${category.categoryName}', '${category.parentId || ''}')">
                                                         <i class="bi bi-pencil-square" style="font-size: 1.2rem"></i>
                                                     </a>
                                                     <a class="btn" href="#" onclick="deleteCategory(${category.categoryId})">
@@ -260,7 +222,7 @@
                                                 </td>
                                             </tr>`;
                                 });
-                                $('table tbody').html(rows); // Cập nhật danh sách các danh mục
+                                $('table tbody').html(rows);
                             } else {
                                 alert('Có lỗi xảy ra: ' + response.message);
                             }
@@ -271,6 +233,35 @@
                     });
                 });
             });
+            // Xử lý xóa danh mục
+                function deleteCategory(id) {
+                    if (confirm('Bạn có chắc chắn muốn xóa danh mục này?')) {
+                        $.ajax({
+                            url: '/admin/category/delete',
+                            type: 'POST',
+                            data: { id: id },
+                            success: function (response) {
+                                if (response.success) {
+                                    alert(response.message);
+                                    location.reload();
+                                } else {
+                                    alert('Có lỗi xảy ra: ' + response.message);
+                                }
+                            },
+                            error: function (xhr) {
+                                alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
+                            }
+                        });
+                    }
+                }
+
+                // Xử lý chỉnh sửa danh mục
+                function editCategory(id, name, parentId) {
+                    $('#EditCategoryId').val(id);
+                    $('#EditCategoryName').val(name);
+                    $('#EditParentId').val(parentId || "");
+                    $('#editCategoryModal').modal('show');
+                }
         </script>
     </div>
 </div>
