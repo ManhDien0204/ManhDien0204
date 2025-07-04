@@ -1,0 +1,244 @@
+﻿@model IEnumerable<Ecommerce_WatchShop.Models.ThuongHieu>
+@{
+    ViewData["Title"] = "Quản lý thương hiệu";
+}
+
+<div class="container-xl">
+    <div class="row g-3 mb-4 align-items-center justify-content-between">
+        <div class="col-auto">
+            <h1 class="app-page-title mb-0">Thương hiệu</h1>
+        </div>
+        <div class="col-auto">
+            <div class="page-utilities">
+                <div class="row g-2 justify-content-start justify-content-md-end align-items-center">
+                    <div class="col-auto">
+                        <form id="search-brands" class="table-search-form row gx-1 align-items-center">
+                            <div class="col-auto">
+                                <input type="text" id="search-brands-input" name="searchQuery" class="form-control search-orders" placeholder="Tìm kiếm thương hiệu" value="@ViewBag.SearchQuery">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Tìm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addBrandModal">
+                            <span><i class="bi bi-plus" style="margin-right: 5px"></i>Thêm</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-card app-card-orders-table shadow-sm mb-5">
+        <div class="app-card-body">
+            <div class="table-responsive">
+                <table class="table app-table-hover mb-0 text-left">
+                    <thead>
+                        <tr>
+                            <th class="cell">ID</th>
+                            <th class="cell">Tên thương hiệu</th>
+                            <th class="cell">Slug</th>
+                            <th class="cell">Số sản phẩm</th>
+                            <th class="cell">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="cell">@item.MaThuongHieu</td>
+                                    <td class="cell">@item.TenThuongHieu</td>
+                                    <td class="cell">@item.Slug</td>
+                                    <td class="cell">@item.SanPhams.Count</td>
+                                    <td class="cell">
+                                        <a class="btn btn-info" asp-action="Details" asp-route-id="@item.MaThuongHieu">
+                                            <i class="bi bi-eye" style="font-size: 1.2rem"></i>
+                                        </a>
+                                        <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.MaThuongHieu">
+                                            <i class="bi bi-pencil-square" style="font-size: 1.2rem"></i>
+                                        </a>
+                                        <a class="btn btn-danger" href="#" onclick="deleteBrand(@item.MaThuongHieu)">
+                                            <i class="bi bi-trash3" style="font-size: 1.2rem"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td class="cell text-center" colspan="5">Không có dữ liệu</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="page-pagination text-center">
+        <ul>
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <li><a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage - 1)">« Trước</a></li>
+            }
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="@(i == ViewBag.CurrentPage ? "active" : "")">
+                    <a asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <li><a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage + 1)">Sau »</a></li>
+            }
+        </ul>
+    </div>
+
+    <!-- Modal Thêm Thương Hiệu -->
+    <div class="modal fade" id="addBrandModal" tabindex="-1" aria-labelledby="addBrandModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addBrandModalLabel">Thêm thương hiệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="addBrandForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="BrandName" class="form-label">Tên thương hiệu</label>
+                            <input type="text" class="form-control" id="BrandName" name="TenThuongHieu" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sửa Thương Hiệu -->
+    <div class="modal fade" id="editBrandModal" tabindex="-1" aria-labelledby="editBrandModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editBrandModalLabel">Sửa thương hiệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="editBrandForm">
+                    <input type="hidden" id="EditBrandId" name="MaThuongHieu">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="EditBrandName" class="form-label">Tên thương hiệu</label>
+                            <input type="text" class="form-control" id="EditBrandName" name="TenThuongHieu" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Xử lý thêm thương hiệu
+            $('#addBrandForm').on('submit', function (e) {
+                e.preventDefault();
+                const formData = $(this).serialize();
+                $.ajax({
+                    url: '@Url.Action("Create", "Brand", new { area = "Admin" })',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            $('#addBrandModal').modal('hide');
+                            location.reload();
+                        } else {
+                            alert('Có lỗi xảy ra: ' + response.message);
+                        }
+                    },
+                    error: function (xhr) {
+                        alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
+                    }
+                });
+            });
+
+            // Xử lý sửa thương hiệu
+            $('#editBrandForm').on('submit', function (e) {
+                e.preventDefault();
+                const formData = $(this).serialize();
+                $.ajax({
+                    url: '@Url.Action("Edit", "Brand", new { area = "Admin" })',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            $('#editBrandModal').modal('hide');
+                            location.reload();
+                        } else {
+                            alert('Có lỗi xảy ra: ' + response.message);
+                        }
+                    },
+                    error: function (xhr) {
+                        alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
+                    }
+                });
+            });
+
+            // Xử lý xóa thương hiệu
+            function deleteBrand(id) {
+                if (confirm('Bạn có chắc chắn muốn xóa thương hiệu này?')) {
+                    $.ajax({
+                        url: '@Url.Action("Delete", "Brand", new { area = "Admin" })',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (response) {
+                            if (response.success) {
+                                alert(response.message);
+                                location.reload();
+                            } else {
+                                alert('Có lỗi xảy ra: ' + response.message);
+                            }
+                        },
+                        error: function (xhr) {
+                            alert('Lỗi không mong muốn xảy ra: ' + xhr.responseText);
+                        }
+                    });
+                }
+            }
+
+            // Tìm kiếm thương hiệu
+            $('#search-brands').on('submit', function (e) {
+                e.preventDefault();
+                const searchQuery = $('#search-brands-input').val();
+                window.location.href = '@Url.Action("Index", "Brand", new { area = "Admin" })?searchQuery=' + encodeURIComponent(searchQuery);
+            });
+
+            // Xử lý chỉnh sửa thương hiệu
+            $('a.btn-warning').on('click', function (e) {
+                e.preventDefault();
+                const id = $(this).attr('asp-route-id');
+                $.ajax({
+                    url: '@Url.Action("Edit", "Brand", new { area = "Admin" })?id=' + id,
+                    type: 'GET',
+                    success: function (response) {
+                        $('#EditBrandId').val(response.maThuongHieu);
+                        $('#EditBrandName').val(response.tenThuongHieu);
+                        $('#editBrandModal').modal('show');
+                    },
+                    error: function (xhr) {
+                        alert('Lỗi khi tải dữ liệu: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
