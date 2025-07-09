@@ -354,7 +354,7 @@ public class AccountController : Controller
         await _context.SaveChangesAsync();
 
         TempData["success"] = "Mật khẩu đã được đặt lại thành công. Vui lòng đăng nhập lại.";
-        return RedirectToAction("LoginPartial", "Home");
+        return RedirectToAction("Login", "Home");
     }
 
     private string GenerateToken()

@@ -9,7 +9,7 @@ namespace Ecommerce_WatchShop.Models.ViewModels
         public string? FullName { get; set; }
 
         [Required(ErrorMessage = "Số điện thoại là bắt buộc.")]
-        [RegularExpression(@"^(?:\+84|0084|0)[235789][0-9]{8}$", ErrorMessage = "Số điện thoại không hợp lệ")]        
+        [RegularExpression(@"^(?:\+84|0084|0)[235789][0-9]{8}$", ErrorMessage = "Số điện thoại không hợp lệ")]
         [StringLength(15)]
         public string? Phone { get; set; }
 
@@ -32,8 +32,12 @@ namespace Ecommerce_WatchShop.Models.ViewModels
         public string? Ward { get; set; }
 
         [Required(ErrorMessage = "Phương thức thanh toán là bắt buộc.")]
-        public string? PaymentMethod { get; set; } 
+        public string? PaymentMethod { get; set; }
 
-        public decimal TotalAmount { get; set; } 
+        public decimal TotalAmount { get; set; }
+
+        public int? MaTinh { get; set; }
+        public int? MaHuyen { get; set; }
+        public int? MaXa { get; set; }
     }
 }

@@ -11,7 +11,11 @@ namespace Ecommerce_WatchShop.Models.ViewModels
 
         public string ProductName { get; set; } = string.Empty;
 
-        public double? Price { get; set; }
+        public double Price { get; set; }
+
+        public double? PromotionPrice { get; set; }
+
+        public decimal? DiscountPercent { get; set; }
 
         public string ShortDescription { get; set; } = string.Empty;
 
@@ -20,6 +24,8 @@ namespace Ecommerce_WatchShop.Models.ViewModels
         public int TotalRating { get; set; }
 
         public string? Slug { get; set; }
+
+        public int SoldQuantity { get; set; }
 
     }
 }

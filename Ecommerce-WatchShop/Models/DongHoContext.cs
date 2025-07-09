@@ -7,7 +7,6 @@ public partial class DongHoContext : DbContext
     public DongHoContext(DbContextOptions<DongHoContext> options) : base(options)
     {
     }
-
     public required virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
 
     public required virtual DbSet<HoaDon> HoaDons { get; set; }
@@ -31,6 +30,12 @@ public partial class DongHoContext : DbContext
     public required virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
 
     public required virtual DbSet<SanPham> SanPhams { get; set; }
+
+    public required virtual DbSet<Tinh> Tinhs { get; set; }
+
+    public required virtual DbSet<Huyen> Huyens { get; set; }
+
+    public required virtual DbSet<Xa> Xas { get; set; }
 
     public required virtual DbSet<BinhLuanSanPham> BinhLuanSanPhams { get; set; }
 
@@ -96,5 +101,35 @@ public partial class DongHoContext : DbContext
         // Đảm bảo khóa chính và khóa ngoại khớp
         modelBuilder.Entity<KhachHang>()
             .HasKey(k => k.MaKhachHang);
+
+        // Thiết lập mối quan hệ cho bảng địa chỉ
+        modelBuilder.Entity<Huyen>()
+            .HasOne(h => h.Tinh)
+            .WithMany(t => t.Huyens)
+            .HasForeignKey(h => h.MaTinh);
+
+        modelBuilder.Entity<Xa>()
+            .HasOne(x => x.Huyen)
+            .WithMany(h => h.Xas)
+            .HasForeignKey(x => x.MaHuyen);
+
+        // Thiết lập mối quan hệ cho KhachHang với địa chỉ
+        modelBuilder.Entity<KhachHang>()
+            .HasOne(k => k.Tinh)
+            .WithMany()
+            .HasForeignKey(k => k.MaTinh)
+            .OnDelete(DeleteBehavior.SetNull);
+
+        modelBuilder.Entity<KhachHang>()
+            .HasOne(k => k.Huyen)
+            .WithMany()
+            .HasForeignKey(k => k.MaHuyen)
+            .OnDelete(DeleteBehavior.SetNull);
+
+        modelBuilder.Entity<KhachHang>()
+            .HasOne(k => k.Xa)
+            .WithMany()
+            .HasForeignKey(k => k.MaXa)
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }

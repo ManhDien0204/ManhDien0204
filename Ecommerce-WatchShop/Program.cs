@@ -42,6 +42,7 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddSingleton<VNPAYHelper>(); // Đăng ký VNPAYHelper
 
 builder.Services.AddLogging(logging =>
 {

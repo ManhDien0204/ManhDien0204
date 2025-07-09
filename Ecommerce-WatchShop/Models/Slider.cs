@@ -15,6 +15,8 @@ namespace Ecommerce_WatchShop.Models
         public string? Link { get; set; }
         public int ThuTuHienThi { get; set; }
         public bool TrangThai { get; set; } = true;
+        public bool HienThiTrangChu { get; set; } = false;
+        public bool HienThiTrangSanPham { get; set; } = false;
 
 
     }

@@ -81,6 +81,17 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
                     product.HinhAnh = "/images/" + fileName;
                 }
 
+                // Tính phần trăm khuyến mãi nếu có giá khuyến mãi
+                if (product.GiaKhuyenMai.HasValue && product.GiaKhuyenMai > 0 && product.GiaKhuyenMai < product.Gia)
+                {
+                    product.PhanTramKhuyenMai = Math.Round((decimal)(((product.Gia - product.GiaKhuyenMai.Value) / product.Gia) * 100), 2);
+                }
+                else
+                {
+                    product.GiaKhuyenMai = null;
+                    product.PhanTramKhuyenMai = null;
+                }
+
                 product.Slug = GenerateUniqueSlug(product.TenSanPham);
                 product.NgayTao = DateTime.Now;
                 product.NgayCapNhat = DateTime.Now;
@@ -172,6 +183,19 @@ namespace Ecommerce_WatchShop.Areas.Admin.Controllers
                 existingProduct.ThongSoKyThuat = product.ThongSoKyThuat;
                 existingProduct.GioiTinh = product.GioiTinh;
                 existingProduct.MoTaNgan = product.MoTaNgan;
+                existingProduct.PhanTramKhuyenMai = product.PhanTramKhuyenMai;
+
+                // Tính phần trăm khuyến mãi nếu có giá khuyến mãi
+                if (product.GiaKhuyenMai.HasValue && product.GiaKhuyenMai > 0 && product.GiaKhuyenMai < product.Gia)
+                {
+                    existingProduct.GiaKhuyenMai = product.GiaKhuyenMai;
+                    existingProduct.PhanTramKhuyenMai = Math.Round((decimal)(((product.Gia - product.GiaKhuyenMai.Value) / product.Gia) * 100), 2);
+                }
+                else
+                {
+                    existingProduct.GiaKhuyenMai = null;
+                    existingProduct.PhanTramKhuyenMai = null;
+                }
 
                 // Tạo hoặc cập nhật Slug nếu chưa có hoặc tên thay đổi
                 if (string.IsNullOrEmpty(existingProduct.Slug) || (existingProduct.TenSanPham != product.TenSanPham))

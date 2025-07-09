@@ -21,9 +21,21 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label asp-for="Gia" class="form-label"><i class="bi bi-currency-dollar me-2"></i>Giá</label>
-                                        <input asp-for="Gia" class="form-control" type="number" step="0.01" placeholder="Nhập giá sản phẩm" required />
+                                        <label asp-for="Gia" class="form-label"><i class="bi bi-currency-dollar me-2"></i>Giá gốc</label>
+                                        <input asp-for="Gia" class="form-control" type="number" step="0.01" placeholder="Nhập giá gốc sản phẩm" required />
                                         <span asp-validation-for="Gia" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label asp-for="GiaKhuyenMai" class="form-label"><i class="bi bi-tag me-2"></i>Giá khuyến mãi</label>
+                                        <input asp-for="GiaKhuyenMai" class="form-control" type="number" step="0.01" placeholder="Nhập giá khuyến mãi (tùy chọn)" onchange="calculateDiscountPercentage()" />
+                                        <span asp-validation-for="GiaKhuyenMai" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label asp-for="PhanTramKhuyenMai" class="form-label"><i class="bi bi-percent me-2"></i>Phần trăm khuyến mãi (%)</label>
+                                        <input asp-for="PhanTramKhuyenMai" class="form-control" type="number" min="0" max="100" placeholder="Sẽ được tính tự động" readonly />
+                                        <span asp-validation-for="PhanTramKhuyenMai" class="text-danger"></span>
                                     </div>
 
                                     <div class="mb-3">
@@ -115,5 +127,20 @@
                         }, false)
                     })
             })();
+
+            function calculateDiscountPercentage() {
+                var originalPrice = parseFloat(document.querySelector('input[name="Gia"]').value) || 0;
+                var promotionPrice = parseFloat(document.querySelector('input[name="GiaKhuyenMai"]').value) || 0;
+
+                if (originalPrice > 0 && promotionPrice > 0 && promotionPrice < originalPrice) {
+                    var discountPercent = ((originalPrice - promotionPrice) / originalPrice) * 100;
+                    document.querySelector('input[name="PhanTramKhuyenMai"]').value = discountPercent.toFixed(2);
+                } else {
+                    document.querySelector('input[name="PhanTramKhuyenMai"]').value = '';
+                }
+            }
+
+            // Tính phần trăm khuyến mãi khi giá gốc thay đổi
+            document.querySelector('input[name="Gia"]').addEventListener('input', calculateDiscountPercentage);
         </script>
     }

@@ -28,6 +28,10 @@ public partial class SanPham
     [Required(ErrorMessage = "Giá là bắt buộc.")]
     [Range(0.01, double.MaxValue, ErrorMessage = "Giá phải lớn hơn 0.")]
     public double Gia { get; set; }
+    public double? GiaKhuyenMai { get; set; }
+
+    [Range(0, 100, ErrorMessage = "Phần trăm khuyến mãi phải từ 0 đến 100.")]
+    public decimal? PhanTramKhuyenMai { get; set; }
 
     [Column(TypeName = "nvarchar(200)")]
     public string? MoTaNgan { get; set; }

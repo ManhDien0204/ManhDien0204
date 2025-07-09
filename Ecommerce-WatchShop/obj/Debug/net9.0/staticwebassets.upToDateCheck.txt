@@ -4702,15 +4702,22 @@ wwwroot\assets\scss\index-charts.js
 wwwroot\assets\scss\portal.scss
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\030fbb20-2ac0-4b9d-b77e-03226226ab6d.png
+wwwroot\Images\179cf333-71e8-46c2-bcd1-a460b2af59b4.png
 wwwroot\Images\1e7a5aea-8315-48e9-90ae-41f7db5096d8.png
 wwwroot\Images\22e61a0c-5366-4bb7-bf3d-a88ec7b051ec.jpg
 wwwroot\Images\23547a3a-c5de-4cba-96e2-04ed4c8c0b35.jpg
 wwwroot\Images\2d57c1c5-b5a0-4248-8bdf-68c88ca3e37c.png
 wwwroot\Images\2ecbebef-8fb8-4d3e-9163-f0fb1dfd5a19_Untitled.jpg
+wwwroot\Images\603b0a7e-bd95-4ebf-8041-448517c9de02.png
+wwwroot\Images\78939385-c0c2-418f-a05b-e6df491c4124.png
 wwwroot\Images\8869b8fe-f2a5-4cb5-bd61-c7a9e0b1cd17_Untitled.jpg
 wwwroot\Images\9d4994b0-b1a0-4866-81ad-7a0921b8bafc.png
+wwwroot\Images\a220167b-b45e-4535-84b1-697c041bed71.png
+wwwroot\Images\ab36cda7-d0da-4671-ba19-44703b04d7e1.png
 wwwroot\Images\Artboard-1.jpg
 wwwroot\Images\b0af5719-10b9-4b2e-bc69-6b0aca9a01c5.png
+wwwroot\Images\b7ee5747-13a3-41c2-8d53-9242764183e9.png
 wwwroot\Images\blog\Blog_1.jpg
 wwwroot\Images\blog\Blog_1_detail.jpg
 wwwroot\Images\blog\Blog_1_mechanism.jpg
@@ -4754,6 +4761,9 @@ wwwroot\Images\Citizen-Tsuyosa-2.png
 wwwroot\Images\Citizen-Tsuyosa-3.png
 wwwroot\Images\Curnon Kashmir.png
 wwwroot\Images\Curnon_Kashmir_Silver___Abyss-removebg-preview.jpg
+wwwroot\Images\d355d886-b7db-43d2-9dba-fe187ddb7242.jpg
+wwwroot\Images\d5d25dd7-5d72-423c-b60c-6995c8900041.png
+wwwroot\Images\dd07979a-844d-440b-afb1-196b34474597.png
 wwwroot\Images\default-image.jpg
 wwwroot\Images\default-large.jpg
 wwwroot\Images\Doxa-Box-2.png
@@ -4763,8 +4773,11 @@ wwwroot\Images\Doxa-Executive-Slim-3.png
 wwwroot\Images\Doxa-Noble.png
 wwwroot\Images\Doxa-x-Dorian-Ho-Earlymoon.png
 wwwroot\Images\Doxa-x-Dorian-Ho-Earlymoon-2.png
+wwwroot\Images\e3734ff9-fc59-474c-be9e-c5d0f4f80c83.png
 wwwroot\Images\e7e59694-465d-4e59-a2e6-e875201e09d0.png
+wwwroot\Images\f2b557c1-3efd-4c42-b74c-7bf1143fc6d4.png
 wwwroot\Images\f9d52544-9c91-40fd-bdc7-6d825c0046c3.png
+wwwroot\Images\fb37e969-1201-4130-9767-e2f9dd76c776.png
 wwwroot\Images\Hop-Seiko.png
 wwwroot\Images\Hublot bigbang.png
 wwwroot\Images\Hublot_Classic_Fusion_Essential_Grey-removebg-preview.png

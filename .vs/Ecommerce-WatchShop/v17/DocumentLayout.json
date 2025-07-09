@@ -3,100 +3,76 @@
   "WorkspaceRootPath": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250625155634_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250625155634_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\brand\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\brand\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\helper\\slughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\helper\\slughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\statistical\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\statistical\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\components\\bestsellerproductviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\components\\bestsellerproductviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\shared\\components\\bestsellerproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\shared\\components\\bestsellerproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\home\\introduction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\home\\introduction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\shared\\components\\featuredproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\shared\\components\\featuredproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\banner\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\banner\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\banner\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\banner\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\banner\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\banner\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\shared\\_bannerslider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\shared\\_bannerslider.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\helper\\uploadimagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\helper\\uploadimagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\banner\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\banner\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -107,48 +83,68 @@
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\helper\\vnpayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\helper\\vnpayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\components\\bestsellerproductviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\components\\bestsellerproductviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250708200558_updateslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250708200558_updateslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250708185052_updatephantramkhuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250708185052_updatephantramkhuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\areas\\admin\\views\\bill\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\areas\\admin\\views\\bill\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250708180506_data_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250708180506_data_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\repository\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\repository\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\views\\shared\\components\\cart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\views\\shared\\components\\cart\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250703041309_updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250703041309_updateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|d:\\doanweb\\tailieu\\ecommerce-watchshop\\ecommerce-watchshop\\migrations\\20250708165736_data_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDDB4512-70A1-42E4-8F7D-57DA69016700}|Ecommerce-WatchShop\\Ecommerce-WatchShop.csproj|solutionrelative:ecommerce-watchshop\\migrations\\20250708165736_data_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,464 +154,440 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20250625155634_data.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250625155634_data.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250625155634_data.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250625155634_data.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250625155634_data.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAtwOIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:51:50.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SlugHelper.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\SlugHelper.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Helper\\SlugHelper.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\SlugHelper.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Helper\\SlugHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:31:51.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:22:43.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ThuongHieu.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ThuongHieu.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\ThuongHieu.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ThuongHieu.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\ThuongHieu.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:15:43.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:05:39.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BrandController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAwEEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:03:39.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAcwPgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:02:07.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Statistical\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Statistical\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Statistical\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Statistical\\Index.cshtml",
-              "ViewState": "AgIAALwBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:01:55.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:01:39.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:20:40.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Introduction.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Introduction.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Home\\Introduction.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Introduction.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Home\\Introduction.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:20:32.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAACYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:19:32.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\appsettings.json",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\appsettings.json",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\appsettings.json",
-              "RelativeToolTip": "Ecommerce-WatchShop\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-03T08:47:31.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAACkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T07:34:21.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DanhMuc.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\DanhMuc.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\DanhMuc.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\DanhMuc.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\DanhMuc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T06:54:24.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAIwAoBAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T06:51:28.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowG0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T06:50:27.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Cart.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Cart\\Cart.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Cart\\Cart.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Cart\\Cart.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Cart\\Cart.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwDUAAAB8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T06:42:05.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\FeaturedProduct\\Default.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\Components\\FeaturedProduct\\Default.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\FeaturedProduct\\Default.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\Components\\FeaturedProduct\\Default.cshtml",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T06:38:20.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "BestSellerProductViewComponent.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwBsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T06:35:37.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T06:35:11.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Default.cshtml",
               "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\BestSellerProduct\\Default.cshtml",
               "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\Components\\BestSellerProduct\\Default.cshtml",
               "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\BestSellerProduct\\Default.cshtml",
               "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\Components\\BestSellerProduct\\Default.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAIEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T06:33:41.601Z"
+              "WhenOpened": "2025-07-08T20:24:06.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
+              "Title": "BestSellerProductViewComponent.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Components\\BestSellerProductViewComponent.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T20:23:21.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Edit.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Edit.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Edit.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAgwJYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T19:29:16.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwI8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T19:29:06.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Index.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Index.cshtml",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAgwMIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T06:33:19.324Z"
+              "WhenOpened": "2025-07-08T19:28:55.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "style.min.css",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\assets\\css\\style.min.css",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\wwwroot\\assets\\css\\style.min.css",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\assets\\css\\style.min.css",
-              "RelativeToolTip": "Ecommerce-WatchShop\\wwwroot\\assets\\css\\style.min.css",
-              "ViewState": "AgIAAAmQAAAAAAAAAADwvxSQAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-03T06:29:39.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Details.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Details.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Details.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Details.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T04:45:29.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAwwBsAAABYAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "BannerController.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAYwOIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:14:20.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20250703041309_updateProduct.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250703041309_updateProduct.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250703041309_updateProduct.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250703041309_updateProduct.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250703041309_updateProduct.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:13:09.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAwwIcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:07:40.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\Cart\\Default.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\Components\\Cart\\Default.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\Components\\Cart\\Default.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\Components\\Cart\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:56:58.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAgwHEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:55:47.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SanPham.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\SanPham.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\SanPham.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\SanPham.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\SanPham.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAuwD0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T03:40:43.704Z"
+              "WhenOpened": "2025-07-08T19:27:54.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAEIBAAAAAAAAAAA1wFMBAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAEkBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T03:27:51.634Z",
+              "WhenOpened": "2025-07-08T17:56:23.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ViewModels\\ProductVM.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\ViewModels\\ProductVM.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ViewModels\\ProductVM.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\ViewModels\\ProductVM.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:01:42.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Details.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Details.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Details.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Banner\\Details.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:29:24.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T19:29:35.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:29:18.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Product\\Index.cshtml",
               "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwOAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACUDAAAAAAAAAAAAAEcDAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:13:36.709Z"
+              "WhenOpened": "2025-07-08T18:03:07.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAnwLMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T20:14:29.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250708200558_updateSlider.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708200558_updateSlider.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250708200558_updateSlider.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708200558_updateSlider.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250708200558_updateSlider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T20:05:58.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\Slider.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\Slider.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\Slider.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\Slider.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T20:01:52.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_BannerSlider.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_BannerSlider.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Shared\\_BannerSlider.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Shared\\_BannerSlider.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Shared\\_BannerSlider.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T19:46:51.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UploadImageHelper.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\UploadImageHelper.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Helper\\UploadImageHelper.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\UploadImageHelper.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Helper\\UploadImageHelper.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T19:31:07.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAgwIwBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T19:33:40.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T19:36:43.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250708185052_updatePhanTramKhuyenMai.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708185052_updatePhanTramKhuyenMai.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250708185052_updatePhanTramKhuyenMai.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708185052_updatePhanTramKhuyenMai.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250708185052_updatePhanTramKhuyenMai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:50:52.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T18:44:55.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Index.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Bill\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T18:44:52.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ProductDetail.cshtml",
               "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Product\\ProductDetail.cshtml",
               "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Product\\ProductDetail.cshtml",
               "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Product\\ProductDetail.cshtml",
               "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Product\\ProductDetail.cshtml",
-              "ViewState": "AgIAAIMBAAAAAAAAAAAcwJcBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAANEDAAAAAAAAAAAgwBAEAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:13:35.662Z"
+              "WhenOpened": "2025-07-08T18:03:25.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAgwJcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T18:00:49.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T18:00:11.828Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Repository\\SeedData.cs",
-              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Repository\\SeedData.cs",
-              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Repository\\SeedData.cs",
-              "RelativeToolTip": "Ecommerce-WatchShop\\Repository\\SeedData.cs",
-              "ViewState": "AgIAAP4BAAAAAAAAAAAAABoCAAAyAAAAAAAAAA==",
+              "Title": "20250708180506_data_2.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708180506_data_2.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250708180506_data_2.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708180506_data_2.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250708180506_data_2.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T03:10:44.377Z"
+              "WhenOpened": "2025-07-08T18:05:06.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\SanPham.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\SanPham.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\SanPham.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:59:39.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:58:10.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Ecommerce-WatchShop\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-08T18:03:57.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Program.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Program.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Program.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:19:31.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VNPAYHelper.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\VNPAYHelper.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Helper\\VNPAYHelper.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Helper\\VNPAYHelper.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Helper\\VNPAYHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:15:42.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\appsettings.json",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\appsettings.json",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\appsettings.json",
+              "RelativeToolTip": "Ecommerce-WatchShop\\appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-08T17:11:26.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CheckoutVM.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ViewModels\\CheckoutVM.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\ViewModels\\CheckoutVM.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ViewModels\\CheckoutVM.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\ViewModels\\CheckoutVM.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA5wCIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:07:27.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwPUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T17:05:24.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Controllers\\CheckoutController.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAkwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:04:55.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250708165736_data_1.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708165736_data_1.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Migrations\\20250708165736_data_1.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Migrations\\20250708165736_data_1.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Migrations\\20250708165736_data_1.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T16:57:36.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ChiTietHoaDon.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\ChiTietHoaDon.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\ChiTietHoaDon.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\ChiTietHoaDon.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T16:56:45.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\HoaDon.cs",
+              "RelativeDocumentMoniker": "Ecommerce-WatchShop\\Models\\HoaDon.cs",
+              "ToolTip": "D:\\DoAnWEB\\TaiLieu\\Ecommerce-WatchShop\\Ecommerce-WatchShop\\Models\\HoaDon.cs",
+              "RelativeToolTip": "Ecommerce-WatchShop\\Models\\HoaDon.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA0wAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T16:55:58.042Z"
             }
           ]
         },

@@ -91,16 +91,10 @@ namespace Ecommerce_WatchShop.Migrations
                         .HasPrecision(18)
                         .HasColumnType("decimal(18,0)");
 
-                    b.Property<int>("HoaDonMaHoaDon")
-                        .HasColumnType("int");
-
                     b.Property<int>("MaHoaDon")
                         .HasColumnType("int");
 
                     b.Property<int>("MaSanPham")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SanPhamMaSanPham")
                         .HasColumnType("int");
 
                     b.Property<int>("SoLuong")
@@ -112,9 +106,9 @@ namespace Ecommerce_WatchShop.Migrations
 
                     b.HasKey("MaChiTietHoaDon");
 
-                    b.HasIndex("HoaDonMaHoaDon");
+                    b.HasIndex("MaHoaDon");
 
-                    b.HasIndex("SanPhamMaSanPham");
+                    b.HasIndex("MaSanPham");
 
                     b.ToTable("ChiTietHoaDons");
                 });
@@ -340,16 +334,19 @@ namespace Ecommerce_WatchShop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHoaDon"));
 
                     b.Property<string>("DiaChi")
-                        .HasColumnType("nvarchar(255)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("HoTen")
+                        .IsRequired()
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Huyen")
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int?>("KhachHangMaKhachHang")
                         .HasColumnType("int");
@@ -364,10 +361,11 @@ namespace Ecommerce_WatchShop.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("SoDienThoai")
+                        .IsRequired()
                         .HasColumnType("varchar(15)");
 
                     b.Property<string>("Tinh")
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("TongTien")
                         .HasColumnType("decimal(18,0)");
@@ -376,13 +374,36 @@ namespace Ecommerce_WatchShop.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Xa")
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("MaHoaDon");
 
                     b.HasIndex("KhachHangMaKhachHang");
 
                     b.ToTable("HoaDons");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Huyen", b =>
+                {
+                    b.Property<int>("MaHuyen")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHuyen"));
+
+                    b.Property<int>("MaTinh")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenHuyen")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaHuyen");
+
+                    b.HasIndex("MaTinh");
+
+                    b.ToTable("Huyens");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
@@ -405,7 +426,16 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Property<string>("HoTen")
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<int?>("MaHuyen")
+                        .HasColumnType("int");
+
                     b.Property<int?>("MaTaiKhoan")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaTinh")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaXa")
                         .HasColumnType("int");
 
                     b.Property<DateOnly?>("NgaySinh")
@@ -419,9 +449,15 @@ namespace Ecommerce_WatchShop.Migrations
 
                     b.HasKey("MaKhachHang");
 
+                    b.HasIndex("MaHuyen");
+
                     b.HasIndex("MaTaiKhoan")
                         .IsUnique()
                         .HasFilter("[MaTaiKhoan] IS NOT NULL");
+
+                    b.HasIndex("MaTinh");
+
+                    b.HasIndex("MaXa");
 
                     b.ToTable("KhachHangs");
                 });
@@ -472,6 +508,9 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Property<double>("Gia")
                         .HasColumnType("float");
 
+                    b.Property<double?>("GiaKhuyenMai")
+                        .HasColumnType("float");
+
                     b.Property<string>("GioiTinh")
                         .HasColumnType("nvarchar(max)");
 
@@ -498,6 +537,9 @@ namespace Ecommerce_WatchShop.Migrations
 
                     b.Property<DateTime?>("NgayTao")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal?>("PhanTramKhuyenMai")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Slug")
                         .HasColumnType("varchar(255)");
@@ -531,6 +573,12 @@ namespace Ecommerce_WatchShop.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Ma"));
+
+                    b.Property<bool>("HienThiTrangChu")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HienThiTrangSanPham")
+                        .HasColumnType("bit");
 
                     b.Property<string>("HinhAnh")
                         .HasColumnType("nvarchar(max)");
@@ -590,15 +638,44 @@ namespace Ecommerce_WatchShop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaThuongHieu"));
 
+                    b.Property<int?>("MaDanhMuc")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<string>("Slug")
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("TenThuongHieu")
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("TrangThai")
+                        .HasColumnType("varchar(20)");
+
                     b.HasKey("MaThuongHieu");
 
+                    b.HasIndex("MaDanhMuc");
+
                     b.ToTable("ThuongHieus");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Tinh", b =>
+                {
+                    b.Property<int>("MaTinh")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaTinh"));
+
+                    b.Property<string>("TenTinh")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaTinh");
+
+                    b.ToTable("Tinhs");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.TokenKhoiPhucMatKhau", b =>
@@ -640,6 +717,29 @@ namespace Ecommerce_WatchShop.Migrations
                     b.HasKey("MaVaiTro");
 
                     b.ToTable("VaiTros");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Xa", b =>
+                {
+                    b.Property<int>("MaXa")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaXa"));
+
+                    b.Property<int>("MaHuyen")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TenXa")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("MaXa");
+
+                    b.HasIndex("MaHuyen");
+
+                    b.ToTable("Xas");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.YeuThich", b =>
@@ -686,13 +786,13 @@ namespace Ecommerce_WatchShop.Migrations
                 {
                     b.HasOne("Ecommerce_WatchShop.Models.HoaDon", "HoaDon")
                         .WithMany("ChiTietHoaDons")
-                        .HasForeignKey("HoaDonMaHoaDon")
+                        .HasForeignKey("MaHoaDon")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Ecommerce_WatchShop.Models.SanPham", "SanPham")
                         .WithMany("ChiTietHoaDons")
-                        .HasForeignKey("SanPhamMaSanPham")
+                        .HasForeignKey("MaSanPham")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -745,13 +845,45 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Navigation("KhachHang");
                 });
 
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Huyen", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.Tinh", "Tinh")
+                        .WithMany("Huyens")
+                        .HasForeignKey("MaTinh")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Tinh");
+                });
+
             modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
                 {
+                    b.HasOne("Ecommerce_WatchShop.Models.Huyen", "Huyen")
+                        .WithMany()
+                        .HasForeignKey("MaHuyen")
+                        .OnDelete(DeleteBehavior.SetNull);
+
                     b.HasOne("Ecommerce_WatchShop.Models.TaiKhoan", "TaiKhoan")
                         .WithOne("KhachHang")
                         .HasForeignKey("Ecommerce_WatchShop.Models.KhachHang", "MaTaiKhoan");
 
+                    b.HasOne("Ecommerce_WatchShop.Models.Tinh", "Tinh")
+                        .WithMany()
+                        .HasForeignKey("MaTinh")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("Ecommerce_WatchShop.Models.Xa", "Xa")
+                        .WithMany()
+                        .HasForeignKey("MaXa")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Huyen");
+
                     b.Navigation("TaiKhoan");
+
+                    b.Navigation("Tinh");
+
+                    b.Navigation("Xa");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.SanPham", b =>
@@ -782,6 +914,15 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Navigation("VaiTro");
                 });
 
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.ThuongHieu", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.DanhMuc", "DanhMuc")
+                        .WithMany()
+                        .HasForeignKey("MaDanhMuc");
+
+                    b.Navigation("DanhMuc");
+                });
+
             modelBuilder.Entity("Ecommerce_WatchShop.Models.TokenKhoiPhucMatKhau", b =>
                 {
                     b.HasOne("Ecommerce_WatchShop.Models.TaiKhoan", "TaiKhoan")
@@ -791,6 +932,17 @@ namespace Ecommerce_WatchShop.Migrations
                         .IsRequired();
 
                     b.Navigation("TaiKhoan");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Xa", b =>
+                {
+                    b.HasOne("Ecommerce_WatchShop.Models.Huyen", "Huyen")
+                        .WithMany("Xas")
+                        .HasForeignKey("MaHuyen")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Huyen");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.YeuThich", b =>
@@ -826,6 +978,11 @@ namespace Ecommerce_WatchShop.Migrations
                     b.Navigation("ChiTietHoaDons");
                 });
 
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Huyen", b =>
+                {
+                    b.Navigation("Xas");
+                });
+
             modelBuilder.Entity("Ecommerce_WatchShop.Models.KhachHang", b =>
                 {
                     b.Navigation("Bills");
@@ -859,6 +1016,11 @@ namespace Ecommerce_WatchShop.Migrations
             modelBuilder.Entity("Ecommerce_WatchShop.Models.ThuongHieu", b =>
                 {
                     b.Navigation("SanPhams");
+                });
+
+            modelBuilder.Entity("Ecommerce_WatchShop.Models.Tinh", b =>
+                {
+                    b.Navigation("Huyens");
                 });
 
             modelBuilder.Entity("Ecommerce_WatchShop.Models.VaiTro", b =>

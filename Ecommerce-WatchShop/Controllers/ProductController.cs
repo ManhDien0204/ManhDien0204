@@ -86,11 +86,20 @@ namespace Ecommerce_WatchShop.Controllers
                     ProductName = p.TenSanPham ?? "Chưa có tên",
                     Image = string.IsNullOrEmpty(p.HinhAnh) ? "/images/default-image.jpg" : p.HinhAnh,
                     Price = p.Gia,
+                    PromotionPrice = p.GiaKhuyenMai,
+                    DiscountPercent = p.PhanTramKhuyenMai,
                     ShortDescription = p.MoTaNgan ?? "Chưa có mô tả",
                     ProductRating = p.DanhGiaSanPhams.Any() ? p.DanhGiaSanPhams.Average(r => r.DiemDanhGia ?? 0) : 0,
                     Slug = p.Slug
                 })
                 .ToListAsync();
+
+            // Lấy danh sách banner cho trang sản phẩm
+            var banners = await _context.Sliders
+                .Where(s => s.TrangThai == true && s.HienThiTrangSanPham == true)
+                .OrderBy(s => s.ThuTuHienThi)
+                .ToListAsync();
+            ViewBag.Banners = banners;
 
             var viewModel = new PagedProductListVM
             {
@@ -128,6 +137,8 @@ namespace Ecommerce_WatchShop.Controllers
                     ProductName = p.TenSanPham!,
                     Image = p.HinhAnh ?? "",
                     Price = p.Gia,
+                    PromotionPrice = p.GiaKhuyenMai,
+                    DiscountPercent = p.PhanTramKhuyenMai,
                     ShortDescription = p.MoTaNgan!,
                     ProductRating = p.DanhGiaSanPhams.Any()
                         ? p.DanhGiaSanPhams.Average(r => (double)r.DiemDanhGia!) : 0,
@@ -145,10 +156,10 @@ namespace Ecommerce_WatchShop.Controllers
         [Route("ProductDetail/{slug}")]
         public async Task<IActionResult> ProductDetail(string? slug)
         {
-            if(string.IsNullOrEmpty(slug))
+            if (string.IsNullOrEmpty(slug))
             {
                 return NotFound();
-            }    
+            }
             var customerIdClaim = User.Claims.FirstOrDefault(c => c.Type == "MaKhachHang");
             var customerId = customerIdClaim != null ? int.Parse(customerIdClaim.Value) : (int?)null;
             // Lấy sản phẩm, đánh giá, và bình luận từ cơ sở dữ liệu

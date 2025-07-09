@@ -21,6 +21,15 @@ public partial class KhachHang
 
     public bool? GioiTinh { get; set; }
 
+    //địa chỉ
+    public int? MaTinh { get; set; }
+    public int? MaHuyen { get; set; }
+    public int? MaXa { get; set; }
+
+    public virtual Tinh? Tinh { get; set; }
+    public virtual Huyen? Huyen { get; set; }
+    public virtual Xa? Xa { get; set; }
+
     public int? MaTaiKhoan { get; set; }
 
     public TaiKhoan TaiKhoan { get; set; }
